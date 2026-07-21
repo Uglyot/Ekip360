@@ -1,0 +1,243 @@
+@media only screen and (max-width:1130px){.Header .Content,
+.FooterCapsule .BottomFoot .Content{padding:0px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.SectionText .Content{padding:77px 15px 87px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.BrandsCapsule .Content{padding:13px 30px;}
+.BrandsCapsule .Content a.Prev{left:19px;}
+.BrandsCapsule .Content a.Next{right:19px;}
+.FooterCapsule .Content{padding:63px 15px 50px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.page360Wrapper .Content{margin:0px 2%;width:96%;}.breadCrumbs{padding:10px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.pageSanalTurFullTitle h1,
+.pageKimlerYararlanirFullTitle h1{padding:38px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.pageWrapper{padding:40px 15px 0px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.pageFullTitle .SelectWrapper .Content{padding:34px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+}
+@media only screen and (max-width:1080px){.Header .Content .Navigation ul li a,
+.Sticky .Content .Navigation ul li a{padding:0px 10px;letter-spacing:0em;font-size:11px;}
+}
+@media only screen and (max-width:1000px){.Header .Content .Navigation ul li a,
+.Sticky .Content .Navigation ul li a{padding:0px 6px;letter-spacing:0em;font-size:10px;}
+.Header .Content .Language,
+.Sticky .Content .Language{padding-left:12px;}
+.Slider ul li span.Caption span.Text{font-size:32px;line-height:42px;margin-top:26px;}
+.Slider ul li span.Caption p{font-size:18px;line-height:28px;margin-top:12px;}
+.ServicesCapsule .Content ul{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0px 7px}
+.ServicesCapsule .Content ul li{padding:15px 8px;}
+.FooterCapsule .Content .SocialCapsule ul li{margin-right:12px;}
+.FooterCapsule .Content .SocialCapsule .GoogleCapsule{max-width:149px;}
+.page360Wrapper .Content ul li span.Colums span{font-size:18px;line-height:30px;margin-bottom:10px;}
+.page360Wrapper .Content ul li span.Colums p{font-size:14px;line-height:24px;}
+.pageServicesFullTitle h1{padding:38px 15px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.pageServicesWrapper .Content{max-width:920px;}
+.pageWhoParticipateWrapper .Content{width:94%;margin:0px 3%;}
+}
+@media only screen and (max-width:900px){.Header .Content{padding:0px;}
+.Header .Content .Logo,
+.Sticky .Content .Logo{margin-left:5px;}
+.Header .Content .Language,
+.Sticky .Content .Language{margin-right:15px;}
+.Header .Content .MobileBt,
+.Sticky .Content .MobileBt{display:block;}
+.Header .Content .Navigation{float:left;width:100%;background:rgba(0,0,0,0.90);max-height:0px;overflow:hidden;-webkit-transition:max-height 0.5s ease-out;-moz-transition:max-height 0.5s ease-out;-o-transition:max-height 0.5s ease-out;-ms-transition:max-height 0.5s ease-out;transition:max-height 0.5s ease-out;}
+.Header .Content .Navigation.release{max-height:1000px;}
+.Sticky .Content .Navigation{background:#2f2f2f;}
+.Header .Content .Navigation ul{width:100%;border-top:1px solid #373737;}
+.Header .Content .Navigation ul ul{border:0px;}
+.Header .Content .Navigation ul li{width:100%;border-bottom:1px solid #373737;}
+.Header .Content .Navigation ul ul li{width:100%;border-bottom:0px;}
+.Header .Content .Navigation ul ul{display:block;}
+.Header .Content .Navigation ul li a,
+.Sticky .Content .Navigation ul li a{width:100%;line-height:32px !important;border:0px;text-align:center;font-size:13px;}
+.Header .Content .Navigation ul ul li a,
+.Sticky .Content .Navigation ul ul li a{font-weight:400;}
+.Header .Content .Navigation ul li a.Hover,
+.Header .Content .Navigation ul li a:hover,
+.Sticky .Content .Navigation ul li a:hover,
+.Header .Content .Navigation ul ul li a:hover,
+.Sticky .Content .Navigation ul ul li a:hover,
+.Header .Content .Navigation ul li a.Active,
+.Sticky .Content .Navigation ul li a.Active{border-bottom:0px !important;background:none;}
+.Header .Content .Navigation ul li a.Hover{background:#de0000;}
+.Header .Content .Navigation ul ul li a.Hover{background:none;}
+.Header .subMenu{display:none;}
+.SectionText .Content{padding:57px 15px 67px 15px}
+.SectionText .Content span.Title{font-size:24px;line-height:36px;}
+.SectionText .Content p{font-size:16px;line-height:30px;margin-top:20px;}
+.SectionText .Content .VideoCapsule .PlayBt,
+.pageLeftColums .VideoCapsule .PlayBt{width:100px;height:100px;margin:-50px 0px 0px -50px;}
+.pageLeftColums .VideoCapsule .PlayBt{width:74px;height:74px;margin:-37px 0px 0px -37px;}
+.SectionText .Content .VideoCapsule .PlayBt a,
+.pageLeftColums .VideoCapsule .PlayBt a{width:100px;height:100px;}
+.pageLeftColums .VideoCapsule .PlayBt a{width:74px;height:74px;}
+.ServicesCapsule .Content{padding:57px 0px 52px 0px;}
+.ServicesCapsule .Content span.Title{font-size:24px;line-height:36px;}
+.ServicesCapsule .Content ul li a{padding:25px 10px 30px 10px;}
+.ServicesCapsule .Content ul li a span.Icon{width:90px;height:72px;}
+.ServicesCapsule .Content ul li a span.Icon img{width:90px;height:72px;}
+.ServicesCapsule .Content ul li a span.Text{font-size:14px;line-height:21px;}
+.ServicesCapsule .Content ul li a p{font-size:12px;line-height:18px;}
+.ContactUsCapsule .Content{max-width:500px;}
+.ContactUsCapsule .Content span{font-size:24px;line-height:30px;}
+.FooterCapsule .Content .LinkCapsule{width:100%;padding-top:20px;padding-bottom:20px;border-top:1px solid #3f3f3f;border-bottom:1px solid #3f3f3f;}
+.FooterCapsule .Content .LinkCapsule ul{padding:0px 10px;}
+.FooterCapsule .Content .LinkCapsule ul li a{text-align:center;}
+.FooterCapsule .Content{text-align:center;padding:40px 15px 40px 15px;}
+.FooterCapsule .Content .SocialCapsule{width:100%;text-align:center;}
+.FooterCapsule .Content .SocialCapsule ul{width:100%;max-width:none;}
+.FooterCapsule .Content .SocialCapsule ul li{width:20%;margin:0px;text-align:center;}
+.FooterCapsule .Content .SocialCapsule ul li a{float:none;display:inline-block;vertical-align:middle;}
+.FooterCapsule .Content .EmlakGezen,
+.FooterCapsule .Content .SocialCapsule .GoogleCapsule{float:none;width:auto;display:inline-block;vertical-align:middle;margin:20px;}
+.FooterCapsule .BottomFoot .Content span.Copyright{float:none;display:inline-block;vertical-align:middle;margin:20px;}
+.FooterCapsule .Content .GoogleCapsule{float:none;display:inline-block;vertical-align:middle;margin:20px;}
+.FooterCapsule .BottomFoot .Content{text-align:center;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo{width:25%;}
+.pageContactWrapper .Content .Box .Capsule{padding:0px 30px;}
+.pageReferenceWrapper .Content .ReferansListFilter ul li a{padding:9px 20px;}
+}
+@media only screen and (max-width:800px){.Slider ul li span.Caption span.Icon{width:70px;height:70px;background-size:70px 70px;}
+.Slider ul li span.Caption span.Text{font-size:26px;line-height:32px;margin-top:16px;}
+.Slider ul li span.Caption p{font-size:14px;line-height:20px;margin-top:8px;}
+.Slider a.Prev{left:10px;width:40px;height:40px;margin-top:-20px;background:url(../images/sliderArrow.png) 0px 0px no-repeat;background-size:80px 80px;}
+.Slider a.Prev:hover{background:url(../images/sliderArrow.png) 0px -40px no-repeat;background-size:80px 80px;}
+.Slider a.Next{right:10px;width:40px;height:40px;margin-top:-20px;background:url(../images/sliderArrow.png) -40px 0px no-repeat;background-size:80px 80px;}
+.Slider a.Next:hover{background:url(../images/sliderArrow.png) -40px -40px no-repeat;background-size:80px 80px;}
+.SectionText .Content span.Title{font-size:20px;line-height:30px;}
+.SectionText .Content p{font-size:14px;line-height:26px;}
+.SectionText .Content .VideoCapsule .PlayBt,
+.pageLeftColums .VideoCapsule .PlayBt{width:60px;height:60px;margin:-30px 0px 0px -30px;}
+.pageLeftColums .VideoCapsule .PlayBt{width:46px;height:46px;margin:-23px 0px 0px -23px;}
+.SectionText .Content .VideoCapsule .PlayBt a,
+.pageLeftColums .VideoCapsule .PlayBt a{width:60px;height:60px;}
+.pageLeftColums .VideoCapsule .PlayBt a{width:46px;height:46px;}
+.ServicesCapsule .Content ul li{width:50%;}
+.SectionText .Content a,
+.ContactUsCapsule .Content a{width:180px;height:36px;font-size:13px;line-height:36px;}
+.page360Wrapper .Content h1{font-size:24px;line-height:36px;}
+.page360Wrapper .Content ul li{border-bottom:1px dashed #CCC;padding-bottom:20px;}
+.page360Wrapper .Content ul li span.Image{float:left;width:35%;}
+.page360Wrapper .Content ul li span.Text{float:right;width:65%;}
+.page360Wrapper .Content ul li span.Colums{padding:0px 15px 0px 0px;}
+.page360Wrapper .Content ul li span.Right span,
+.page360Wrapper .Content ul li span.Right p{text-align:left;}
+.pageLeftColums{width:100%;}
+.pageRightColums{width:100%;max-width:none;padding-bottom:15px;}
+.pageRightColums .PageMenu{overflow:hidden;margin-bottom:10px;}
+.pageRightColums .PageMenu .MobileBt{display:block;margin-bottom:10px;}
+.pageRightColums .PageMenu ul{max-height:0px;-webkit-transition:max-height 0.5s ease-out;-moz-transition:max-height 0.5s ease-out;-o-transition:max-height 0.5s ease-out;-ms-transition:max-height 0.5s ease-out;transition:max-height 0.5s ease-out;}
+.pageRightColums .PageMenu ul.release{max-height:1000px;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Description{width:45%;}
+.pageReferenceWrapper .Content .ReferansListFilter ul li a{padding:9px 10px;}
+.pageLeftColums .Bloglist ul{border:0px;}
+}
+@media only screen and (max-width:700px){.Slider ul li span.Caption{left:0px;width:80%;margin-left:10%;}
+.ContactUsCapsule .Content{margin:0px 6%;width:84%;max-width:none;padding:120px 0px;}
+.ContactUsCapsule .Content span{font-size:20px;line-height:26px;}
+.page360Wrapper .Content h1{font-size:20px;line-height:30px;}
+.page360Wrapper .Content ul li span.Colums span{font-size:16px;line-height:22px;margin-bottom:10px;}
+.page360Wrapper .Content ul li span.Colums p{font-size:12px;line-height:18px;}
+.pageServicesWrapper .Content .Box .Capsule span.Title{padding:12px 20px 0px 20px;}
+.pageServicesWrapper .Content .Box .Capsule p{padding:15px 20px 20px 20px;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Image{float:none;max-width:none;margin:0px auto;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Description{width:100%;padding:5px 0px;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Description span.Title{text-align:center;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Description span.Text01{min-height:inherit;text-align:center;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.Description span.Text02{margin-top:5px;text-align:center;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo{float:left;width:100%;padding:10px 0px;margin-top:10px;border-top:1px dashed #dbdbdb;}
+.pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo span.Phone,
+.pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo span.Adress{text-align:center;}
+.selectBox-dropdown{width:50% !important;}
+.RerefansDetailWrapper .SanalTurGallery ul li{width:33.33%;}
+.RerefansDetailWrapper .SanalTurCapsule iframe,
+.page360slide,
+.page360slide iframe
+.pageContactslide{height:300px;}
+.pageContactWrapper .Content .Box{width:100%;}
+.pageWhoParticipateWrapper .Content .TextBox ul{width:100%;}
+.pageLeftColums .EkipList ul li span.Content{padding-top:0px;}
+.pageReferenceWrapper .Content .ReferansListFilter{padding:10px 15px 0px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.pageReferenceWrapper .Content .ReferansListFilter .MobileBt{display:block;margin-bottom:10px;}
+.pageReferenceWrapper .Content .ReferansListFilter ul{padding:0px;border-top:1px solid #cbcbcb;max-height:0px;-webkit-transition:max-height 0.5s ease-out;-moz-transition:max-height 0.5s ease-out;-o-transition:max-height 0.5s ease-out;-ms-transition:max-height 0.5s ease-out;transition:max-height 0.5s ease-out;overflow:hidden;}
+.pageReferenceWrapper .Content .ReferansListFilter ul.release{max-height:1000px;}
+.pageReferenceWrapper .Content .ReferansListFilter ul li{margin:0px;width:100%;}
+.pageReferenceWrapper .Content .ReferansListFilter ul li a{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;width:100%;border:0px;border-bottom:1px solid #cbcbcb;}
+.pageReferenceWrapper .Content .ReferansListFilter ul li a.selected{border:0px;border-bottom:1px solid #cbcbcb;font-weight:700;}
+.pageReferenceWrapper .Content .ReferansList ul li{width:33.33%;}
+}
+@media only screen and (max-width:600px){.FooterCapsule .Content .LinkCapsule ul{width:50%;}
+.FooterCapsule .Content .LinkCapsule ul:last-child{margin-top:30px;width:100%;}
+.BrandsCapsule .Content ul li{min-width:120px;}
+.SectionText .Content a{margin-top:30px;}
+.pageServicesWrapper .Content .Box{width:100%;}
+.pageSanalTurFullTitle h1,
+.pageKimlerYararlanirFullTitle h1,
+.pageServicesFullTitle h1{font-size:20px;line-height:22px;}
+.RerefansDetailWrapper .SanalTurDescription span.Description{width:100%;}
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo{width:100%;margin-top:15px;}
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Phone,
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Adress{text-align:left;}
+.RerefansDetailWrapper .SanalTurGallery ul li{width:50%;}
+.RerefansDetailWrapper .SanalTurCapsule iframe,
+.page360slide,
+.page360slide iframe,
+.pageContactslide{height:250px;}
+.pageLeftColums .TextContent ul.Bull li{font-size:13px;}
+.pageReferenceWrapper .Content .ReferansList ul li{width:50%}
+.ErrorPage404Wrapper .Content span.Text404{font-size:140px;line-height:160px;}
+.ErrorPage404Wrapper .Content span.Uyari{font-size:24px;line-height:28px;}
+.ErrorPage404Wrapper .Content span.Uyari2{font-size:16px;line-height:20px;}
+}
+@media only screen and (max-width:500px){.pageLeftColums .EkipList ul li span.Image{float:none;min-width:120px;margin:0px auto;display:block;}
+.pageLeftColums .EkipList ul li span.Content{width:100%;margin-top:20px;padding:0px;}
+.pageLeftColums .EkipList ul li span.Content span.Name,
+.pageLeftColums .EkipList ul li p{text-align:center;}
+.pageLeftColums .EkipList ul li p.sertifika{width:100%;max-width:none;}
+.pageLeftColums .EkipList ul li p.sertifika img{float:none;width:50%;height:auto;display:inline-block;}
+.ErrorPage404Wrapper .Content span.Text404{font-size:100px;line-height:120px;}
+.ErrorPage404Wrapper .Content span.Uyari{font-size:20px;line-height:24px;}
+.ErrorPage404Wrapper .Content span.Uyari2{font-size:12px;line-height:16px;}
+}
+@media only screen and (max-width:450px){.Slider ul li span.Caption span.Icon{width:50px;height:50px;background-size:50px 50px;}
+.Slider ul li span.Caption span.Text{font-size:20px;line-height:26px;margin-top:10px;}
+.Slider ul li span.Caption p{font-size:12px;line-height:16px;margin-top:5px;}
+.Slider a.Prev{left:5px;width:30px;height:30px;margin-top:-15px;background:url(../images/sliderArrow.png) 0px 0px no-repeat;background-size:60px 60px;}
+.Slider a.Prev:hover{background:url(../images/sliderArrow.png) 0px -30px no-repeat;background-size:60px 60px;}
+.Slider a.Next{right:5px;width:30px;height:30px;margin-top:-15px;background:url(../images/sliderArrow.png) -30px 0px no-repeat;background-size:60px 60px;}
+.Slider a.Next:hover{background:url(../images/sliderArrow.png) -30px -30px no-repeat;background-size:60px 60px;}
+.Slider .ScrollDown a{padding:7px 0px;}
+.Slider .ScrollDown a span.Text{height:20px;font-size:14px;line-height:20px;}
+.Slider .Pagination{bottom:70px;}
+.ContactUsCapsule .Content span{font-size:16px;line-height:22px;}
+.FooterCapsule .BottomFoot .Content span.Copyright{font-size:12px;padding:10px 0px;}
+.selectBox-dropdown{width:100% !important;}
+.RerefansDetailWrapper .SanalTurCapsule iframe,
+.page360slide,
+.page360slide iframe,
+.pageContactslide{height:220px;}
+}
+@media only screen and (max-width:380px){.ServicesCapsule .Content ul li{width:100%;}
+.SectionText .Content span.Title{font-size:16px;line-height:20px;}
+.SectionText .Content p{font-size:12px;line-height:20px;}
+.SectionText .Content a,
+.ContactUsCapsule .Content a{width:150px;height:32px;font-size:12px;line-height:32px;}
+.FooterCapsule .Content .LinkCapsule ul{margin-top:30px;width:100%;}
+.FooterCapsule .Content .LinkCapsule ul:first-child{margin-top:0px;}
+.pageReferenceWrapper .Content .ReferansList ul li{width:100%}
+.Header .Content .Logo,
+.Sticky .Content .Logo,
+.StickyMobile .Content .Logo{width:200px;height:51px;margin:14px 0px;}
+.Header .Content .Logo a,
+.Sticky .Content .Logo a,
+.StickyMobile .Content .Logo a{width:200px;height:51px;background-size:cover;}
+.Sticky .Content .Logo,
+.StickyMobile .Content .Logo{width:117px;height:30px;margin:13px 0px;}
+.Sticky .Content .Logo a,
+.StickyMobile .Content .Logo a{width:117px;height:30px;background-size:cover;}
+}
+@media only screen and (max-height:600px){.Header{position:static;}
+.page360slide,
+.pageFullTitle,
+.pageKimlerYararlanirFullTitle,
+.pageServicesFullTitle,
+.pageContactslide{padding-top:0px;}
+.breadCrumbs{margin-top:0px;}
+}

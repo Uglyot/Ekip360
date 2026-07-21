@@ -1,0 +1,22 @@
+.selectBox-dropdown{position:relative;line-height:1.5;text-decoration:none;text-align:left;color:#000;outline:none;display:inline-block;cursor:pointer;width:35% !important;height:40px;overflow:hidden;background:#FFF;border:1px solid #dbdbdb;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.selectBox-dropdown:focus,
+.selectBox-dropdown:focus .selectBox-arrow{border-color:#dbdbdb;}
+.selectBox-dropdown.selectBox-menuShowing{-moz-border-radius-bottomleft:0;-moz-border-radius-bottomright:0;-webkit-border-bottom-left-radius:0;-webkit-border-bottom-right-radius:0;border-bottom-left-radius:0;border-bottom-right-radius:0;}
+.selectBox-dropdown .selectBox-label{float:left;width:100% !important;padding:0 45px 0px 25px;display:inline-block;text-overflow:ellipsis;white-space:nowrap;background:none;height:40px;font-family:'Open Sans', sans-serif;font-weight:600;font-size:15px;line-height:38px;color:#151515;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;overflow:hidden;}
+.selectBox-dropdown.gender .selectBox-label{padding:0 40px 0px 40px;}
+.selectBox-dropdown .selectBox-arrow{position:absolute;top:0;right:0;width:45px;height:38px;background:url(../images/selectArrow.png) center center no-repeat;}
+.selectBox-dropdown-menu{position:absolute;z-index:99;max-height:224px;min-height:1em;background-color:#FFF;border:solid 1px #e2e2e2;overflow:auto;}
+.selectBox-inline{min-width:150px;outline:none;border:solid 1px #e2e2e2;background:#FFF;display:inline-block;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;overflow:auto;}
+.selectBox-inline:focus{border-color:#e2e2e2;}
+.selectBox-options,
+.selectBox-options LI{list-style:none;display:block;cursor:default;padding:0;margin:0;}
+.selectBox-options LI A{list-style:none;display:block;cursor:default;padding:0;margin:0;}
+.selectBox-options LI A{line-height:1.5;padding:0px 25px;white-space:nowrap;overflow:hidden;background:6px center no-repeat;font-family:'Open Sans', sans-serif;font-weight:600;font-size:15px;line-height:38px;color:#151515;cursor:pointer;border-bottom:1px solid #dad8d7;}
+.selectBox-options LI.selectBox-hover A{color:#de0000;}
+.selectBox-options LI.selectBox-disabled A{color:#787878;background-color:transparent;}
+.selectBox-options LI.selectBox-selected A{color:#de0000;}
+.selectBox-options .selectBox-optgroup{color:#666;background:#EEE;font-weight:bold;line-height:1.5;padding:0 .3em;white-space:nowrap;}
+.selectBox.selectBox-disabled{color:#888 !important;}
+.selectBox-dropdown.selectBox-disabled .selectBox-arrow{opacity:.5;filter:alpha(opacity=50);border-color:#666;}
+.selectBox-inline.selectBox-disabled{color:#888 !important;}
+.selectBox-inline.selectBox-disabled .selectBox-options A{background-color:transparent !important;}

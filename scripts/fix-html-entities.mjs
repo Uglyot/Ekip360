@@ -1,0 +1,182 @@
+/**
+ * Sanity'deki referansların title, sector, address, description alanlarındaki
+ * HTML entity'lerini düzeltir ve BW Eresin İstanbul'u ekler.
+ *
+ * Çalıştır:
+ *   SANITY_WRITE_TOKEN=$(grep SANITY_WRITE_TOKEN .env.local | cut -d= -f2) node scripts/fix-html-entities.mjs
+ */
+
+import { createClient } from '@sanity/client'
+import fs from 'fs'
+
+const client = createClient({
+  projectId: '1gjnai7w',
+  dataset: 'production',
+  apiVersion: '2024-01-01',
+  token: process.env.SANITY_WRITE_TOKEN,
+  useCdn: false,
+})
+
+const BASE_URL = 'https://ekip360.net'
+const THUMB_DIR = '/Users/tolgabalikci/Documents/Projects/COWORK-OS/ekip360-website-backup/httpdocs/Content/Thumb'
+const CONTENT_DIR = '/Users/tolgabalikci/Documents/Projects/COWORK-OS/ekip360-website-backup/httpdocs/Content'
+
+function decodeEntities(str) {
+  if (!str) return str
+  return str
+    .replace(/&#199;/g, 'Ç').replace(/&#231;/g, 'ç')
+    .replace(/&#220;/g, 'Ü').replace(/&#252;/g, 'ü')
+    .replace(/&#214;/g, 'Ö').replace(/&#246;/g, 'ö')
+    .replace(/&#304;/g, 'İ').replace(/&#305;/g, 'ı')
+    .replace(/&#286;/g, 'Ğ').replace(/&#287;/g, 'ğ')
+    .replace(/&#350;/g, 'Ş').replace(/&#351;/g, 'ş')
+    .replace(/&#39;/g,  "'").replace(/&amp;/g,  '&')
+    .replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ')
+    .trim()
+}
+
+function stripHtml(html) {
+  if (!html) return ''
+  return html
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#[0-9]+;/g, m => {
+      const code = parseInt(m.slice(2, -1))
+      return String.fromCharCode(code)
+    })
+    .replace(/\s+/g, ' ').trim()
+}
+
+function extractUUID(url) {
+  const match = url.match(/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/i)
+  return match?.[1] || null
+}
+
+async function uploadFromFile(filePath) {
+  const { createReadStream } = await import('fs')
+  const path = await import('path')
+  const ext = path.default.extname(filePath).slice(1).toLowerCase()
+  const contentType = ext === 'png' ? 'image/png' : 'image/jpeg'
+  const asset = await client.assets.upload('image', createReadStream(filePath), {
+    filename: path.default.basename(filePath), contentType,
+  })
+  return { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
+}
+
+async function uploadFromUrl(url) {
+  const path = await import('path')
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`HTTP ${res.status}`)
+  const buffer = Buffer.from(await res.arrayBuffer())
+  const filename = path.default.basename(new URL(url).pathname)
+  const ext = path.default.extname(filename).slice(1).toLowerCase()
+  const contentType = ext === 'png' ? 'image/png' : 'image/jpeg'
+  const asset = await client.assets.upload('image', buffer, { filename, contentType })
+  return { _type: 'image', asset: { _type: 'reference', _ref: asset._id } }
+}
+
+async function resolveImage(url) {
+  const path = await import('path')
+  const uuid = extractUUID(url)
+  if (uuid) {
+    const candidates = [
+      path.default.join(THUMB_DIR, `${uuid}.jpg`),
+      path.default.join(THUMB_DIR, `thmb_${uuid}.jpg`),
+      path.default.join(CONTENT_DIR, `${uuid}.jpg`),
+    ]
+    for (const p of candidates) {
+      if (fs.existsSync(p)) return uploadFromFile(p)
+    }
+  }
+  return uploadFromUrl(url)
+}
+
+function parseHtml(html, category) {
+  const iframeMatch = html.match(/<iframe[^>]+src="([^"]*google[^"]*)"/i)
+  const streetViewUrl = iframeMatch?.[1] || ''
+  const titleMatch = html.match(/<span class="Title">([^<]+)<\/span>/)
+  const title = decodeEntities(titleMatch?.[1]?.trim() || '')
+  const sectorMatch = html.match(/<span class="Text01">([^<]+)<\/span>/)
+  const sector = decodeEntities(sectorMatch?.[1]?.trim() || '')
+  const phoneMatch = html.match(/<span class="Phone">([^<]+)<\/span>/)
+  const telephoneNumber = decodeEntities(phoneMatch?.[1]?.trim() || '')
+  const addrMatch = html.match(/<span class="Adress">([\s\S]*?)<\/span>/)
+  const address = addrMatch ? decodeEntities(stripHtml(addrMatch[1])) : ''
+  const descMatch = html.match(/<div class="TextContent">([\s\S]*?)<\/div>\s*<\/div>/)
+  const description = descMatch ? decodeEntities(stripHtml(descMatch[1])) : ''
+  const galleryUrls = []
+  const galleryRe = /href="((?:https?:\/\/ekip360\.net)?\/Content\/[^"]+\.jpg)"/gi
+  let m
+  while ((m = galleryRe.exec(html)) !== null) {
+    const url = m[1].startsWith('http') ? m[1] : `${BASE_URL}${m[1]}`
+    if (!galleryUrls.includes(url)) galleryUrls.push(url)
+  }
+  const thumbMatch = html.match(/<img[^>]+src="(\/Content\/[^"]+(?:thumb|Thumb|thumbnail)[^"]*\.(?:jpg|png))"/i)
+  const thumbnailUrl = thumbMatch ? `${BASE_URL}${thumbMatch[1]}` : (galleryUrls[0] || null)
+  return { title, category, streetViewUrl, sector, telephoneNumber, address, description, galleryUrls, thumbnailUrl }
+}
+
+async function run() {
+  // 1. Mevcut tüm referansların entity'lerini düzelt
+  console.log('🔧 HTML entity\'ler düzeltiliyor...')
+  const docs = await client.fetch(`*[_type == "referans"]{ _id, title, sector, address, description }`)
+
+  let fixed = 0
+  for (const doc of docs) {
+    const newTitle   = decodeEntities(doc.title || '')
+    const newSector  = decodeEntities(doc.sector || '')
+    const newAddress = decodeEntities(doc.address || '')
+    const newDesc    = decodeEntities(doc.description || '')
+
+    if (newTitle !== doc.title || newSector !== doc.sector || newAddress !== doc.address || newDesc !== doc.description) {
+      await client.patch(doc._id).set({
+        title: newTitle,
+        sector: newSector,
+        address: newAddress,
+        description: newDesc,
+      }).commit()
+      fixed++
+      console.log(`  ✅ Düzeltildi: ${newTitle}`)
+    }
+  }
+  console.log(`  ${fixed} belge düzeltildi.\n`)
+
+  // 2. BW Eresin İstanbul'u ekle (network hatasıyla atlanmıştı)
+  console.log('➕ BW Eresin İstanbul ekleniyor...')
+  const exists = await client.fetch(`*[_type == "referans" && title == "BW Eresin İstanbul"][0]{ _id }`)
+  if (exists) {
+    console.log('  Zaten mevcut, atlanıyor.\n')
+  } else {
+    const res = await fetch(`${BASE_URL}/ReferansDetay/bw-eresin-istanbul/2084`)
+    const html = await res.text()
+    const data = parseHtml(html, 'Hotels')
+
+    let thumbnail = null
+    if (data.thumbnailUrl) {
+      try { thumbnail = await resolveImage(data.thumbnailUrl) } catch (e) { console.warn('  ⚠️  Thumbnail yüklenemedi') }
+    }
+    const gallery = []
+    for (const url of data.galleryUrls.filter(u => u !== data.thumbnailUrl).slice(0, 12)) {
+      try { gallery.push(await resolveImage(url)) } catch {}
+    }
+
+    await client.create({
+      _type: 'referans',
+      title: data.title || 'BW Eresin İstanbul',
+      category: 'Hotels',
+      sector: data.sector,
+      telephoneNumber: data.telephoneNumber,
+      address: data.address,
+      streetViewUrl: data.streetViewUrl,
+      description: data.description,
+      order: 12,
+      ...(thumbnail && { thumbnail }),
+      ...(gallery.length && { gallery }),
+    })
+    console.log(`  ✅ BW Eresin İstanbul oluşturuldu (${gallery.length} galeri görseli)\n`)
+  }
+
+  console.log('🎉 Tamamlandı!')
+}
+
+run()
