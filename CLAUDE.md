@@ -5,9 +5,9 @@ ekip360.net adresindeki **ASP.NET MVC 5** kurumsal web sitesinin **Next.js App R
 **Hedef:** Orijinal siteyle görsel ve işlevsel olarak birebir aynı olmak. Tasarım kararı yok — referans site kaynak kod ve canlı sitedir.
 
 - Canlı site: https://ekip360.net
-- Kaynak kod: `/Users/tolgabalikci/Documents/Projects/COWORK-OS/ekip360-website-backup/`
+- Kaynak kod: `/Users/tolgabalikci/Claude_Code_Workspace/Projects/COWORK-OS/ekip360-website-backup/`
 - Eski BackOffice: https://ekip360.net/BackOffice/Login/Index → **Sanity Studio** ile ikame edilecek
-- Yeni proje klasörü: `/Users/tolgabalikci/Documents/Projects/COWORK-OS/Ekip-360-Next-js/`
+- Yeni proje klasörü: `/Users/tolgabalikci/Claude_Code_Workspace/Projects/COWORK-OS/Ekip-360-Next-js/`
 
 ---
 
