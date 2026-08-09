@@ -26,6 +26,9 @@ Thumbs.db
 .obsidian/
 *.pem
 
+# ekran görüntüleri / geçici notlar
+image.png
+
 # debug
 npm-debug.log*
 yarn-debug.log*
