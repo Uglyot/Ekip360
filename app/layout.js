@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
         <meta name="Author" content="Ekip 360" />
         <meta name="Copyright" content="Ekip 360" />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="/css/Ekip360_style.css" />
         <link rel="stylesheet" type="text/css" href="/css/Ekip360_responsive.css" />
         <link rel="stylesheet" type="text/css" href="/css/jquery.selectbox.css" />
@@ -138,7 +139,7 @@ export default function RootLayout({ children }) {
                 </li>
               </ul>
               <div className="GoogleCapsule">
-                <img src="/images/Ekip360Logo.png" width="100" height="auto" alt="Ekip 360" />
+                <img src="/images/Ekip360Logo.png" width="115" height="62" alt="Ekip 360" />
               </div>
             </div>
 

@@ -24,6 +24,7 @@
 .DS_Store
 Thumbs.db
 .obsidian/
+.sanity/
 *.pem
 
 # ekran görüntüleri / geçici notlar

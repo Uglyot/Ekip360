@@ -19,16 +19,26 @@ export default function SliderInit() {
     }
 
     async function init() {
-      await loadScript('/jquery-1.8.2.min.js')
-      await loadScript('/jquery.easing.1.3.js')
-      await loadScript('/jquery.mousewheel.js')
-      await loadScript('/jquery.touchSwipe.min.js')
-      await loadScript('/jquery.carouFredSel-6.2.1-packed.js')
-      await loadScript('/fancybox/jquery.fancybox.js')
-      await loadScript('/ekip360_app.js')
+      try {
+        // jQuery once yuklenmeli; plugin'ler (easing/mousewheel/touchSwipe)
+        // $ tanimli olmadan kayit olamaz. Bu yuzden 4 asamali yukleme:
+        await loadScript('/jquery-1.8.2.min.js')
+        await Promise.all([
+          loadScript('/jquery.easing.1.3.js'),
+          loadScript('/jquery.mousewheel.js'),
+          loadScript('/jquery.touchSwipe.min.js'),
+        ])
+        await Promise.all([
+          loadScript('/jquery.carouFredSel-6.2.1-packed.js'),
+          loadScript('/fancybox/jquery.fancybox.js'),
+        ])
+        await loadScript('/ekip360_app.js')
 
-      if (typeof window.MainSlider === 'function') window.MainSlider()
-      if (typeof window.BrandSlider === 'function') window.BrandSlider()
+        if (typeof window.MainSlider === 'function') window.MainSlider()
+        if (typeof window.BrandSlider === 'function') window.BrandSlider()
+      } catch (err) {
+        console.error('Slider scriptleri yuklenemedi:', err)
+      }
     }
 
     init()

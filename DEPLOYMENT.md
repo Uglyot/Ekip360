@@ -104,7 +104,53 @@ cd /home/ekipnet/nextapp && rm -rf .next && mkdir .next && tar -xzf ekip360-next
 chmod -R u+rwX,go+rX /home/ekipnet/nextapp/.next
 ```
 
-### 5. Doğrula
+### 5. public/ klasörünü senkronize et (CSS/JS/görsel değiştiyse)
+
+`.next` arşivi **yalnızca derlenen kodu** taşır; `public/` altındaki CSS, JS ve görseller
+sunucuya ayrıca yüklenmez. Bu adım atlanırsa yerelde düzelmiş bir sorun canlıda eski
+dosyalarla devam eder (25.08.2026'da CLS düzeltmesi bu yüzden canlıya gitmemişti).
+
+Önce yerelde değişen var mı bak:
+
+```bash
+git status --short public
+```
+
+**Seçenek A — az sayıda dosya (tercih edilen):** Değişen dosyaları FileZilla / cPanel
+File Manager ile sunucuda **aynı göreli yola** yükle. Örn. `public/css/Ekip360_style.css`
+değiştiyse hedef `/home/ekipnet/nextapp/public/css/Ekip360_style.css` olmalı. Bu durumda
+aşağıdaki tar komutlarına **gerek yoktur**.
+
+**Seçenek B — çok sayıda dosya:** Tüm `public/` içeriğini tek arşivle taşı.
+
+Yerelde paketle:
+
+```bash
+tar -czf ~/Desktop/ekip360-public.tar.gz -C public .
+```
+
+Arşivi FileZilla ile **önce** `/home/ekipnet/` altına yükle, sonra sunucuda aç:
+
+```bash
+cd /home/ekipnet/nextapp/public && tar -xzf ~/ekip360-public.tar.gz && rm -f ~/ekip360-public.tar.gz
+```
+
+> ⚠️ tar komutu arşivi `/home/ekipnet/` altında arar. Arşiv yüklenmeden komut
+> çalıştırılırsa `Cannot open: No such file or directory` hatası alırsın — bu hata
+> dosyalarının bozuk olduğu anlamına gelmez, sadece arşiv rotasının kullanılmadığını
+> gösterir. Seçenek A kullanıldıysan bu adımı tamamen atla.
+>
+> Arşivi **asla `public/` klasörünün içine yükleme** — o klasördeki her dosya web'den
+> indirilebilir durumdadır (`https://ekip360.net/<dosya>`). Yanlışlığa oraya düştüyse
+> açıp hemen sil. (25.08.2026'da başımıza geldi.)
+
+Sunucuda dosyanın gerçekten güncel olduğunu diskten doğrula (örnek):
+
+```bash
+grep -c "100dvh" /home/ekipnet/nextapp/public/css/Ekip360_style.css
+```
+
+### 6. Doğrula
 
 ```bash
 cat /home/ekipnet/nextapp/.next/BUILD_ID
@@ -112,7 +158,11 @@ cat /home/ekipnet/nextapp/.next/BUILD_ID
 
 Yerel `.next/BUILD_ID` ile aynı değeri vermelidir.
 
-### 6. Yeniden başlat
+> ⚠️ Diskteki `BUILD_ID` doğru olmak, **çalışan sürecin** yeni build'i kullandığını
+> garanti etmez — eski süreç belleğindeki sayfaları servis etmeye devam edebilir.
+> Kesin kanıt, restart sonrası aşağıdaki "Doğrulama > Canlı içerik kontrolü"dür.
+
+### 7. Yeniden başlat
 
 ```bash
 mkdir -p /home/ekipnet/nextapp/tmp && touch /home/ekipnet/nextapp/tmp/restart.txt
@@ -120,7 +170,15 @@ mkdir -p /home/ekipnet/nextapp/tmp && touch /home/ekipnet/nextapp/tmp/restart.tx
 
 cPanel'deki RESTART düğmesi de aynı işi yapar ama bazen sessizce başarısız olur.
 
-### 7. Temizle
+Restart sonrası canlı içerik hâlâ eski geliyorsa (aşağıdaki "Doğrulama > Canlı içerik
+kontrolü" hâlâ eskiyi gösteriyorsa) RESTART düğmesini kullan ve sürecin başlangıç
+zamanını deploy saatinden sonra olduğunu doğrula:
+
+```bash
+ps -eo pid,lstart,cmd | grep "node server.js" | grep -v grep
+```
+
+### 8. Temizle
 
 ```bash
 rm -f /home/ekipnet/nextapp/ekip360-next-build.tar.gz
@@ -147,6 +205,24 @@ curl -s https://ekip360.net/ | grep -o "cdn.sanity.io[^\"]*" | head -3
 
 `200` **ve** `cdn.sanity.io/...` satırları bekleniyor. İkincisi boşsa `NEXT_PUBLIC_*` değerleri build'e girmemiş demektir.
 
+Canlı içerik kontrolü (2026-08 sonrası build için). İki tuzak yaşandı: `grep -c` satır
+sayar, eşleşme değil — tek satıra sıkışmış HTML'de her arama "1" döner; üstelik eski HTML
+bir önbellekten geliyor olabilir. Bu yüzden **occurrence sayımı** (`grep -o | wc -l`) ve
+**önbellek atlatan sorgu parametresi** (`?cb=...`) birlikte kullanılır:
+
+```bash
+# Eski build işareti — 0 olmalı:
+curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -o "_next/image?url=" | wc -l
+
+# Yeni build işaretleri — her biri ≥ 1 olmalı:
+curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -io 'fetchpriority="high"' | wc -l
+curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -o "auto=format" | wc -l
+curl -s "https://ekip360.net/css/Ekip360_style.css?v=$(date +%s)" | grep -o "100dvh" | wc -l
+```
+
+Hepsi tutuyorsa build yayındır. `url=` sayısı 0'dan büyükse ya `.next` eski yüklenmiş ya
+da süreç restart almadı — BUILD_ID ve yeniden başlatma adımlarına dön.
+
 Uygulamayı LiteSpeed olmadan elle test etmek:
 
 ```bash
@@ -166,7 +242,10 @@ source /home/ekipnet/nodevenv/nextapp/24/bin/activate && cd /home/ekipnet/nextap
 | `package.json file is required` | Application root yanlış | Root `nextapp` olmalı |
 | `No such application... Unable to find app-root folder` | Kayıtlı app-root klasörü silinmiş | Klasörü `mkdir` ile geri oluştur, sayfayı yenile, root'u düzelt |
 | `SyntaxError: Unexpected token {` (`app/page.js` yığın izinde) | Başlangıç dosyası yanlış | Startup file `server.js` olmalı |
+| Build yüklü (`BUILD_ID` doğru) ama canlı içerik eski | Süreç restart almadı veya HTML önbellekte | `?cb=$(date +%s)` ile occurrence testi yap; RESTART düğmesi + `ps ... lstart` kontrolü |
+| `grep -c "_next/image"` hep "1" dönüyor | `grep -c` satır sayar; minified HTML tek satırdır | `grep -o "_next/image?url=" \| wc -l` kullan |
 | Site açılıyor ama Sanity içeriği boş | `NEXT_PUBLIC_*` build'e girmemiş | `.env.local` ekle, `rm -rf .next`, yeniden derle ve yükle |
+| Yerelde düzelen sorun canlıda sürüyor | `public/` yüklenmedi (adım 5) | Değişen `public` dosyalarını yükle; tarayıcı önbelleğini devre dışı alıp test et |
 
 ## Uygulama logu
 
