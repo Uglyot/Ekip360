@@ -199,3 +199,33 @@ SANITY_API_TOKEN=
 RESEND_API_KEY=
 CONTACT_EMAIL=
 ```
+
+---
+
+## 🔁 SEO Denetimi Dersleri — Bu Projeye Yeniden Başlasaydık
+> **Not:** Bu bölüm 26.08.2026'da, migration sonrası yapılan 4 maddelik SEO denetiminin
+> ardından **agent (Claude)** tarafından eklenmiştir. Yukarıdaki planlama içeriği bilinçli
+> olarak korunmuştur; çelişki halinde bu bölümdeki öğrenilenler ile `MEMORY.md`
+> ("Belgelerle Kod Arasındaki Farklar") ve `DEPLOYMENT.md` geçerlidir.
+
+### Madde 1 — Render Stratejisi (SSR/SSG)
+- **Başlangıçta:** App Router varsayılanına güvenildi. *(Doğru karardı — veri çekimi Server Component'lerde kaldığı için tüm sayfalar dolu HTML döndü.)*
+- **Yeniden başlasak:** İlk günden kural net olsun: veri yalnızca Server Component'lerde çekilir, `'use client'` bileşenlere yalnızca etkileşim verilir; `useEffect` içinde fetch yok. Kabul kriteri olarak build çıktısındaki ○ (Static) / ƒ (Dynamic) işaretlerini ve "her route'un ilk HTML'inde içerik" şartını kontrol et.
+
+### Madde 2 — Büyük/Küçük Harf ve Trailing Slash
+- **Başlangıçta:** Route'lar lowercase kuruldu ama eski PascalCase URL'lere dönüş yapılmadı → eski bağlantılar 404 yiyordu.
+- **Yeniden başlasak:** Harf farkı olanları next.config redirects'e yazma! Next eşlemesi harf duyarsız olduğundan `/Hakkimizda → /hakkimizda` kuralı hedefin kendisini de yakalayıp sonsuz döngü kurar. Doğrusu iki katman: **path'i değişenler** config redirects'te (`permanent: true`), **yalnızca harf farkı olanlar** bilinen sayfa listesiyle middleware'de. Trailing slash için Next varsayılanı (308) yeterli — sitemap aynı formatta kalsın.
+
+### Madde 3 — Canonical ve Meta Etiketleri
+- **Başlangıçta:** Title'lar özgün yapıldı ama canonical hiç yoktu; OG sadece blog detayda vardı; açıklamalar sessizce layout mirasına kaldı.
+- **Yeniden başlasak:** `metadataBase` ilk günden layout'ta tanımlansın; her sayfanın metadata'sı oluşturulurken `alternates.canonical` + `openGraph(title, url, image)` bloğu birlikte yazılsın (sonradan 17 dosyayı tek tek dokunmak zorunda kaldık). Dinamik detaylarda canonical mutlak URL olmalı. Açıklama stratejisi (global parite mi, sayfa bazlı özgün mü) migration başında karar olarak kayda geçsin.
+
+### Madde 4 — Değişen URL Şablonlarına 301
+- **Başlangıçta:** Eski URL envanteri alınmadı; `.aspx`, EN sayfalar, `/ReferansDetay/<slug>/<pk>` gibi formatların varlığı fark edilmedi.
+- **Yeniden başlasak:** Migration'dan **önce** eski sitenin `sitemap.xml`/`robots.txt`'ini envanter olarak al ve her URL için yeni karşılık üret: birebir path → 301; PK→slug gibi eşlenemeyen detaylar için slug normalizasyonuyla eşleştiren üretici script + JSON tablo (bkz. `scripts/generate-referans-slug-map.mjs` + `lib/referans-slug-map.json`); eşleşmeyenler ilgili bölüm sayfasına. Kaldırılan dil sürümlerini TR karşılıklarına yönlendir. `www`/apex ayrışmasını ilk gün çöz — ikisi de 200 servis ederse otorite bölünür.
+
+### Doğrulama Disiplini (tüm maddelerde işe yaradı)
+- Canlı içerik testi: `grep -c` değil `grep -o … | wc -l` (minified HTML tek satırdır) + `?cb=$(date +%s)` ile önbellek atlatma.
+- Diskteki `BUILD_ID` doğru olmak, çalışan sürecin yeni build'i servis ettiğini garanti etmez; restart sonrası canlı test şart.
+- Deploy paketi `.next` yalnızca derlenen kodu taşır; `public/` değiştiyse ayrı senkronizasyon gerekir (DEPLOYMENT.md adım 5).
+
