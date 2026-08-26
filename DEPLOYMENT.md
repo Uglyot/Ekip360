@@ -162,6 +162,17 @@ Yerel `.next/BUILD_ID` ile aynı değeri vermelidir.
 > garanti etmez — eski süreç belleğindeki sayfaları servis etmeye devam edebilir.
 > Kesin kanıt, restart sonrası aşağıdaki "Doğrulama > Canlı içerik kontrolü"dür.
 
+Önce yerel terminalde sorgula:
+```bash
+cat .next/BUILD_ID
+```
+Sonra hosting terminalinde:
+```bash
+cat /home/ekipnet/nextapp/.next/BUILD_ID
+```
+
+
+
 ### 7. Yeniden başlat
 
 ```bash
@@ -215,10 +226,16 @@ bir önbellekten geliyor olabilir. Bu yüzden **occurrence sayımı** (`grep -o 
 curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -o "_next/image?url=" | wc -l
 
 # Yeni build işaretleri — her biri ≥ 1 olmalı:
-curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -io 'fetchpriority="high"' | wc -l
 curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -o "auto=format" | wc -l
-curl -s "https://ekip360.net/css/Ekip360_style.css?v=$(date +%s)" | grep -o "100dvh" | wc -l
+# og:title/description/image/url — 4 beklenir:
+curl -s "https://ekip360.net/?cb=$(date +%s)" | grep -o 'property="og:' | wc -l
+# 26.08.2026 CSS uyumluluk düzeltmesi işareti:
+curl -s "https://ekip360.net/css/Ekip360_style.css?v=$(date +%s)" | grep -o "margin-block-start" | wc -l
 ```
+
+> `fetchpriority="high"` işareti listeden çıkarıldı (26.08.2026): hero görseli artık
+> `next/image` yerine doğrudan CDN'den geldiği için bu öznitelik ana sayfada hiç
+> üretilmiyor — canlıda da taze yerel build'de de 0'dır. Ölçüt olarak kullanmayın.
 
 Hepsi tutuyorsa build yayındır. `url=` sayısı 0'dan büyükse ya `.next` eski yüklenmiş ya
 da süreç restart almadı — BUILD_ID ve yeniden başlatma adımlarına dön.
@@ -246,6 +263,8 @@ source /home/ekipnet/nodevenv/nextapp/24/bin/activate && cd /home/ekipnet/nextap
 | `grep -c "_next/image"` hep "1" dönüyor | `grep -c` satır sayar; minified HTML tek satırdır | `grep -o "_next/image?url=" \| wc -l` kullan |
 | Site açılıyor ama Sanity içeriği boş | `NEXT_PUBLIC_*` build'e girmemiş | `.env.local` ekle, `rm -rf .next`, yeniden derle ve yükle |
 | Yerelde düzelen sorun canlıda sürüyor | `public/` yüklenmedi (adım 5) | Değişen `public` dosyalarını yükle; tarayıcı önbelleğini devre dışı alıp test et |
+| `/yonetim` curl'ü boş HTML veya 302 Cloudflare sayfası dönüyor | Yol Cloudflare Access ile korunuyor; kimlik doğrulamamış istek (curl/bot dahil) login'e yönelir | Beklenen davranış. `robots noindex` meta'sını görmek için Access kimliğiyle gir; ya da sunucuda `NODE_ENV=production PORT=3999 node server.js` başlatıp `curl -s localhost:3999/yonetim \| grep robots` |
+| `www.` üzerinden yapılan ölçüm 0/eksik | www, apex'e 308 ile yönlendirir; `curl -L` olmadan yönlendirme gövdesi alınır | `curl -sL ...` kullan; ölçümleri daima apex (`https://ekip360.net`) üzerinden yap |
 
 ## Uygulama logu
 
