@@ -18,9 +18,11 @@ export async function generateMetadata({ params }) {
   return {
     title,
     description,
+    alternates: { canonical: `https://ekip360.net/referanslar/${id}` },
     openGraph: {
       title,
       description,
+      url: `/referanslar/${id}`,
       images: ref.thumbnail ? [urlFor(ref.thumbnail).width(1200).height(630).url()] : [],
     },
   }

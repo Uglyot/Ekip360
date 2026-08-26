@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: 'Hakkımızda — Ekip 360',
+  alternates: { canonical: '/hakkimizda' },
+  openGraph: {
+    title: 'Hakkımızda — Ekip 360',
+    url: '/hakkimizda',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function HakkimizdaPage() {

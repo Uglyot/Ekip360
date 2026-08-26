@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: 'Fiyatlandırma Nasıl Yapılır? — Ekip 360',
+  alternates: { canonical: '/fiyatlandirma' },
+  openGraph: {
+    title: 'Fiyatlandırma Nasıl Yapılır? — Ekip 360',
+    url: '/fiyatlandirma',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function FiyatlandirmaPage() {

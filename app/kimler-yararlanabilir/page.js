@@ -1,5 +1,11 @@
 export const metadata = {
   title: 'Kimler Yararlanabilir? — Ekip 360',
+  alternates: { canonical: '/kimler-yararlanabilir' },
+  openGraph: {
+    title: 'Kimler Yararlanabilir? — Ekip 360',
+    url: '/kimler-yararlanabilir',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function KimlerYararlanabilirPage() {

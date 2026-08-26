@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: '360 Sanal Turunuzu Web Sitenize Ekleyin — Ekip 360',
+  alternates: { canonical: '/web-sitenize-ekleyin' },
+  openGraph: {
+    title: '360 Sanal Turunuzu Web Sitenize Ekleyin — Ekip 360',
+    url: '/web-sitenize-ekleyin',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function WebSitenizeEkleyinPage() {

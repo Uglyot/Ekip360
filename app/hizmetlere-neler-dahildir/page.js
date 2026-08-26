@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: 'Hizmetlere Neler Dahildir? — Ekip 360',
+  alternates: { canonical: '/hizmetlere-neler-dahildir' },
+  openGraph: {
+    title: 'Hizmetlere Neler Dahildir? — Ekip 360',
+    url: '/hizmetlere-neler-dahildir',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function HizmetlereNelerDahilPage() {

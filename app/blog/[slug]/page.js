@@ -31,8 +31,10 @@ export async function generateMetadata({ params }) {
   return {
     title: `${post.title} — Ekip 360 Blog`,
     description: post.summary || post.title,
+    alternates: { canonical: `https://ekip360.net/blog/${slug}` },
     openGraph: {
       title: post.title,
+      url: `/blog/${slug}`,
       images: post.mainImage ? [urlFor(post.mainImage).width(1200).height(630).url()] : [],
     },
   }

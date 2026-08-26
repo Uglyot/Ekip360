@@ -3,6 +3,12 @@ import { urlFor } from '@/lib/sanity'
 
 export const metadata = {
   title: 'Blog — Ekip 360',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'Blog — Ekip 360',
+    url: '/blog',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 function formatDate(dateStr) {

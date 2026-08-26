@@ -3,6 +3,12 @@ import ReferanslarClient from './ReferanslarClient'
 
 export const metadata = {
   title: 'Referanslar — Ekip 360',
+  alternates: { canonical: '/referanslar' },
+  openGraph: {
+    title: 'Referanslar — Ekip 360',
+    url: '/referanslar',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default async function ReferanslarPage() {

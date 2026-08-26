@@ -2,6 +2,16 @@ import { getSliderImages } from "@/lib/sanity";
 import { urlFor } from "@/lib/sanity";
 import VideoFacade from "@/components/VideoFacade";
 
+// Baslik/aciklama layout varsayilanindan miras alinir (legacy parite).
+export const metadata = {
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Ekip 360 - Google Street View Güvenilir Profesyonelleri',
+    url: '/',
+    images: ['/images/slider/slider01.jpg'],
+  },
+};
+
 // LCP: hero gorseli /_next/image optimizer'i yerine dogrudan cdn.sanity.io'dan
 // servis edilir; srcset ile tarayici ekran genisligine uygun varyanti secer.
 const SLIDER_WIDTHS = [640, 960, 1280, 1920];

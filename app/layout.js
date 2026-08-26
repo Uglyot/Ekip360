@@ -2,6 +2,7 @@ import Script from 'next/script'
 import SliderInit from '@/components/SliderInit'
 
 export const metadata = {
+  metadataBase: new URL('https://ekip360.net'),
   title: 'Ekip 360 - Google Street View Güvenilir Profesyonelleri',
   description:
     'Google Business View Türkiye hizmet veren profesyonelleri. Street View Google haritalar entegrasyonu ile dünyanın her yerinden sokak panoramaları ile 7/24 direk iş yerinize geçiş imkanı sunuyoruz.',
