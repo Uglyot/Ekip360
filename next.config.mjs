@@ -13,10 +13,10 @@ const legacyRedirects = [
   { source: "/Fiyatlandirma-Nasil-Yapilir", destination: "/fiyatlandirma" },
   { source: "/360-Sanal-Turunuzu-Facebooka-Ekleyin", destination: "/facebooka-ekleyin" },
   { source: "/360-Sanal-Turunuzu-Web-Sitenize-Ekleyin", destination: "/web-sitenize-ekleyin" },
-  // Eski detay formatlari (PK eslemesi yok; bolum sayfasina toplanir)
+  // Eski detay formatlari (PK eslemesi yok; bolum sayfasina toplanir).
+  // /ReferansDetay/<slug>/<pk> ise middleware.js te slug esleme ile ozel detaya gider.
   { source: "/BlogDetail/:id", destination: "/blog" },
   { source: "/Home/ReferansDetay/:id", destination: "/referanslar" },
-  { source: "/ReferansDetay/:slug*", destination: "/referanslar" },
 ].map(({ source, destination }) => ({ source, destination, permanent: true }));
 
 const nextConfig = {
