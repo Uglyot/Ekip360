@@ -145,7 +145,6 @@
 .pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo{float:left;width:100%;padding:10px 0px;margin-top:10px;border-top:1px dashed #dbdbdb;}
 .pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo span.Phone,
 .pageReferenceWrapper .Content .ReferansList ul li a span.AdressInfo span.Adress{text-align:center;}
-.selectBox-dropdown{width:50% !important;}
 .RerefansDetailWrapper .SanalTurGallery ul li{width:33.33%;}
 .RerefansDetailWrapper .SanalTurCapsule iframe,
 .page360slide,
@@ -208,7 +207,6 @@
 .Slider .Pagination{bottom:70px;}
 .ContactUsCapsule .Content span{font-size:16px;line-height:22px;}
 .FooterCapsule .BottomFoot .Content span.Copyright{font-size:12px;padding:10px 0px;}
-.selectBox-dropdown{width:100% !important;}
 .RerefansDetailWrapper .SanalTurCapsule iframe,
 .page360slide,
 .page360slide iframe,
