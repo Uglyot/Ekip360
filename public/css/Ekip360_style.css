@@ -58,6 +58,7 @@ td {
 }
 button, html [type="button"], /* 1 */ [type="reset"], [type="submit"] {
   -webkit-appearance: button; /* 2 */
+  appearance: button;
 }
 ol,
 ul,
@@ -78,9 +79,9 @@ input[type="submit"]:focus,
 select:focus {
   outline-color: transparent;
   outline-style: none;
-  box-shadow: none;
-  -moz-box-shadow: none;
   -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 input,
 textarea,
@@ -1634,12 +1635,6 @@ img {
   padding: 0px 15px;
   letter-spacing: 0px;
 }
-.page360Wrapper .Content ul li span.Image {
-  /*Responsive*/
-}
-.page360Wrapper .Content ul li span.Text {
-  /*Responsive*/
-}
 .page360Wrapper .Content ul li span.Image img {
   float: left;
   width: 100%;
@@ -2824,11 +2819,10 @@ img {
 .pageLeftColums .BlogDetailText span.BlogText ol {
   display: block;
   list-style-type: decimal;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px;
+  /* Eski standart-disi on ekli margin ozellikleri yerine standart logik ozellikler
+     (Firefox dahil tum tarayicilar destekler) */
+  margin-block-start: 1em;
+  margin-block-end: 1em;
   padding: 0 0 0 20px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
