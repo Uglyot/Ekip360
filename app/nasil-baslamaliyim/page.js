@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: 'Nasıl Başlamalıyım? — Ekip 360',
+  alternates: { canonical: '/nasil-baslamaliyim' },
+  openGraph: {
+    title: 'Nasıl Başlamalıyım? — Ekip 360',
+    url: '/nasil-baslamaliyim',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function NasilBaslamaliyimPage() {

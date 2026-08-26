@@ -2,6 +2,12 @@
 
 export const metadata = {
   title: "360 Sanal Turunuzu Facebook'a Ekleyin — Ekip 360",
+  alternates: { canonical: '/facebooka-ekleyin' },
+  openGraph: {
+    title: "360 Sanal Turunuzu Facebook'a Ekleyin — Ekip 360",
+    url: '/facebooka-ekleyin',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function FacebookaEkleyinPage() {

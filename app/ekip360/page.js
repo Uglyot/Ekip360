@@ -1,5 +1,11 @@
 export const metadata = {
   title: 'Ekip 360 — Ekip 360',
+  alternates: { canonical: '/ekip360' },
+  openGraph: {
+    title: 'Ekip 360 — Ekip 360',
+    url: '/ekip360',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 const team = [

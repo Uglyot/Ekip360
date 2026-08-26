@@ -1,5 +1,11 @@
 export const metadata = {
   title: 'Sıkça Sorulan Sorular — Ekip 360',
+  alternates: { canonical: '/sss' },
+  openGraph: {
+    title: 'Sıkça Sorulan Sorular — Ekip 360',
+    url: '/sss',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 const faqs = [

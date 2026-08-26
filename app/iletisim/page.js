@@ -2,6 +2,12 @@ import ContactForm from './ContactForm'
 
 export const metadata = {
   title: 'İletişim — Ekip 360',
+  alternates: { canonical: '/iletisim' },
+  openGraph: {
+    title: 'İletişim — Ekip 360',
+    url: '/iletisim',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 export default function IletisimPage() {

@@ -1,5 +1,11 @@
 export const metadata = {
   title: 'Google Sanal Tur Avantajları — Ekip 360',
+  alternates: { canonical: '/google-sanal-tur-avantajlari' },
+  openGraph: {
+    title: 'Google Sanal Tur Avantajları — Ekip 360',
+    url: '/google-sanal-tur-avantajlari',
+    images: ['/images/slider/slider01.jpg'],
+  },
 }
 
 const advantages = [
