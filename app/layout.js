@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://cdn.sanity.io" crossOrigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="/css/Ekip360_style.css" />
         <link rel="stylesheet" type="text/css" href="/css/Ekip360_responsive.css" />
-        <link rel="stylesheet" type="text/css" href="/css/jquery.selectbox.css" />
         <link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox.css" />
       </head>
       <body>

@@ -1,6 +1,7 @@
 # MEMORY.md — ekip360 Migration Projesi
 
 ## Proje Bağlamı
+
 ekip360.net (Google Street View sanal tur hizmeti veren kurumsal site) ASP.NET MVC 5'ten Next.js App Router'a taşınıyor.
 
 > Başlangıçta ASP.NET Core sanılıyordu. Kaynak kod incelemesinde **ASP.NET MVC 5** olduğu doğrulandı.
@@ -8,19 +9,20 @@ ekip360.net (Google Street View sanal tur hizmeti veren kurumsal site) ASP.NET M
 ---
 
 ## Teknik Kararlar
-| Konu | Karar |
-|---|---|
-| Dil | JavaScript (TypeScript yok) |
-| Router | Next.js App Router |
-| CMS | Sanity |
-| E-posta | Resend |
-| CSS | Orijinal dosyalar olduğu gibi taşınacak |
-| Carousel | CarouFredSel → embla-carousel-react veya swiper |
-| Lightbox | FancyBox → yet-another-react-lightbox |
-| Veritabanı | Yok (SQL Server → Sanity'e taşınacak) |
-| Public auth | Yok (sadece Sanity Studio) |
+
+| Konu         | Karar                                                                                                                                                                                                                                                                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Dil          | JavaScript (TypeScript yok)                                                                                                                                                                                                                                                                                                                                                                                         |
+| Router       | Next.js App Router                                                                                                                                                                                                                                                                                                                                                                                                  |
+| CMS          | Sanity                                                                                                                                                                                                                                                                                                                                                                                                              |
+| E-posta      | Resend                                                                                                                                                                                                                                                                                                                                                                                                              |
+| CSS          | Orijinal dosyalar olduğu gibi taşınacak                                                                                                                                                                                                                                                                                                                                                                             |
+| Carousel     | CarouFredSel → embla-carousel-react veya swiper                                                                                                                                                                                                                                                                                                                                                                     |
+| Lightbox     | FancyBox → yet-another-react-lightbox                                                                                                                                                                                                                                                                                                                                                                               |
+| Veritabanı   | Yok (SQL Server → Sanity'e taşınacak)                                                                                                                                                                                                                                                                                                                                                                               |
+| Public auth  | Yok (sadece Sanity Studio)                                                                                                                                                                                                                                                                                                                                                                                          |
 | Eski URL'ler | ASP.NET URL'leri kalici yonlendirilir: path degisenler `next.config.mjs > redirects`, harf farklilari + EN sayfalar + www->apex `middleware.js`. Eski `/ReferansDetay/<slug>/<pk>` slug'lari `lib/referans-slug-map.json` ile ozel detaya eslenir (ureteci: `scripts/generate-referans-slug-map.mjs`, Sanity basliklarindan). Kaynak envanter: yedek `sitemap.xml` (122 URL). Trailing slash Next varsayilani (308) |
-| EN sayfaları | TR tamamlanmadan bekleyecek |
+| EN sayfaları | TR tamamlanmadan bekleyecek                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ---
 
@@ -31,19 +33,20 @@ ekip360.net (Google Street View sanal tur hizmeti veren kurumsal site) ASP.NET M
 > Proje `~/Documents/Projects/COWORK-OS/` altından buraya taşındı (01.08.2026).
 > Eski yol artık diskte yok — belgelerdeki referanslar güncellendi.
 
-| Klasör / Dosya | Açıklama |
-|---|---|
-| `CLAUDE.md` | Proje talimatları ve detaylı belgeleme |
-| `MEMORY.md` | Bu dosya |
-| `Ekip-360-Next-js/` | Yeni Next.js projesi buraya kurulacak |
-| `ekip360-website-backup/httpdocs/` | ASP.NET MVC 5 kaynak kodu |
-| `ekip360-website-backup/httpdocs/Views/Home/` | ~40 .cshtml view dosyası |
-| `ekip360-website-backup/httpdocs/css/` | Orijinal CSS dosyaları |
-| `ekip360-website-backup/httpdocs/DATABASE/Ekip360db.sql` | SQL Server şeması |
+| Klasör / Dosya                                           | Açıklama                               |
+| -------------------------------------------------------- | -------------------------------------- |
+| `CLAUDE.md`                                              | Proje talimatları ve detaylı belgeleme |
+| `MEMORY.md`                                              | Bu dosya                               |
+| `Ekip-360-Next-js/`                                      | Yeni Next.js projesi buraya kurulacak  |
+| `ekip360-website-backup/httpdocs/`                       | ASP.NET MVC 5 kaynak kodu              |
+| `ekip360-website-backup/httpdocs/Views/Home/`            | ~40 .cshtml view dosyası               |
+| `ekip360-website-backup/httpdocs/css/`                   | Orijinal CSS dosyaları                 |
+| `ekip360-website-backup/httpdocs/DATABASE/Ekip360db.sql` | SQL Server şeması                      |
 
 ---
 
 ## Sanity'e Taşınacak SQL Tabloları
+
 `Blog` · `BlogCategory` · `References` · `FAQ` · `Services` · `WhoCanBenefit` · `VirtualTourAdvantage` · `Teams` · `HomePageTitle` · `Sliders`
 
 ---
@@ -53,15 +56,15 @@ ekip360.net (Google Street View sanal tur hizmeti veren kurumsal site) ASP.NET M
 **Site 03.08.2026 itibarıyla yayında.** Hosting hesabı LiteSpeed `lsnode` üzerinden
 Node.js uygulaması çalıştırıyor.
 
-| Konu | Değer |
-|---|---|
-| Application root | `/home/ekipnet/nextapp` — **`public_html` dışında** |
-| Belge kökü | `/home/ekipnet/public_html` — yalnızca cPanel'in yazdığı `.htaccess` |
-| Node sürümü | 24.18.0 (yerelde de aynı) |
-| Başlangıç dosyası | `server.js` (kök dizin, CommonJS) — **asla** `app/` altındaki bir dosya değil |
-| Application mode | Production |
-| Ortam değişkenleri | `/home/ekipnet/nextapp/.env.local` (zorunlu) + cPanel env vars (yedek) |
-| Derleme | **Yerelde** (Mac); `.next` tar ile sunucuya yüklenir |
+| Konu               | Değer                                                                         |
+| ------------------ | ----------------------------------------------------------------------------- |
+| Application root   | `/home/ekipnet/nextapp` — **`public_html` dışında**                           |
+| Belge kökü         | `/home/ekipnet/public_html` — yalnızca cPanel'in yazdığı `.htaccess`          |
+| Node sürümü        | 24.18.0 (yerelde de aynı)                                                     |
+| Başlangıç dosyası  | `server.js` (kök dizin, CommonJS) — **asla** `app/` altındaki bir dosya değil |
+| Application mode   | Production                                                                    |
+| Ortam değişkenleri | `/home/ekipnet/nextapp/.env.local` (zorunlu) + cPanel env vars (yedek)        |
+| Derleme            | **Yerelde** (Mac); `.next` tar ile sunucuya yüklenir                          |
 
 ### Kurulum sırasında öğrenilen üç şey
 
@@ -123,11 +126,11 @@ sabit tanımlı, fotoğraflar `public/images/ekip/` altından geliyor.
 CLAUDE.md planlama sırasında yazıldı; uygulama bazı noktalarda ondan ayrıldı.
 Geçerli olan koddur:
 
-| Konu | CLAUDE.md | Gerçek |
-|---|---|---|
-| Next sürümü | 14+ | 16.2.10 (React 19.2.4) |
+| Konu         | CLAUDE.md                 | Gerçek                     |
+| ------------ | ------------------------- | -------------------------- |
+| Next sürümü  | 14+                       | 16.2.10 (React 19.2.4)     |
 | Studio route | `app/studio/[[...tool]]/` | `app/yonetim/[[...tool]]/` |
-| Sanity token | `SANITY_API_TOKEN` | `SANITY_WRITE_TOKEN` |
+| Sanity token | `SANITY_API_TOKEN`        | `SANITY_WRITE_TOKEN`       |
 
 ---
 
@@ -141,6 +144,7 @@ Geçerli olan koddur:
 ---
 
 ## Referanslar
+
 - Canlı site: https://ekip360.net
 - Eski BackOffice: https://ekip360.net/BackOffice/Login/Index
 - Git deposu: https://github.com/Uglyot/Ekip360

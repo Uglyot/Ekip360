@@ -3,6 +3,7 @@
 // Kullanim: node --env-file=.env.local scripts/generate-referans-slug-map.mjs
 import { createClient } from 'next-sanity'
 import { writeFileSync } from 'node:fs'
+import { normalizeSlug as slugify } from '../lib/slug-normalize.mjs'
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
@@ -10,20 +11,6 @@ const client = createClient({
   apiVersion: '2024-01-01',
   useCdn: true,
 })
-
-function slugify(value) {
-  return String(value)
-    .replace(/ç/gi, 'c')
-    .replace(/ğ/gi, 'g')
-    .replace(/ı/gi, 'i')
-    .replace(/İ/g, 'i')
-    .replace(/ö/gi, 'o')
-    .replace(/ş/gi, 's')
-    .replace(/ü/gi, 'u')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '')
-}
 
 const refs = await client.fetch('*[_type == "referans" && defined(title)] { _id, title }')
 
