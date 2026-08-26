@@ -19,6 +19,7 @@ ekip360.net (Google Street View sanal tur hizmeti veren kurumsal site) ASP.NET M
 | Lightbox | FancyBox → yet-another-react-lightbox |
 | Veritabanı | Yok (SQL Server → Sanity'e taşınacak) |
 | Public auth | Yok (sadece Sanity Studio) |
+| Eski URL'ler | ASP.NET URL'leri kalici yonlendirilir: path degisenler `next.config.mjs > redirects`, harf farklilari `middleware.js` (kanonik sayfa listesi). Kaynak: yedek `_LayoutPage.cshtml` menü linkleri. Trailing slash Next varsayilani (308) |
 | EN sayfaları | TR tamamlanmadan bekleyecek |
 
 ---
