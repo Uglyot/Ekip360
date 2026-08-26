@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { normalizeSlug } from "./lib/slug-normalize.mjs";
 import referansSlugMap from "./lib/referans-slug-map.json";
 
 // Kanonik statik sayfa yollari: sadece bu listedekiler buyuk harf normalizasyonuna girer.
@@ -38,21 +39,6 @@ const LEGACY_EN_TO_TR = {
   "/who-can-benefit": "/kimler-yararlanabilir",
   "/blogen": "/blog",
 };
-
-// Eski SeoSetting benzeri slug normalizasyonu: tr karakter katlama + semboller -> tire
-function normalizeSlug(value) {
-  return decodeURIComponent(value)
-    .replace(/ç/gi, "c")
-    .replace(/ğ/gi, "g")
-    .replace(/ı/gi, "i")
-    .replace(/İ/g, "i")
-    .replace(/ö/gi, "o")
-    .replace(/ş/gi, "s")
-    .replace(/ü/gi, "u")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
 
 function redirectTo(request, pathname, status) {
   const url = request.nextUrl.clone();
