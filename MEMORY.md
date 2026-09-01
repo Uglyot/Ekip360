@@ -141,6 +141,15 @@ Geçerli olan koddur:
   GitHub kimlik doğrulaması (keychain'de kayıtlı parola) reddediliyor.
   Kimlik bilgisi yenilendikten sonra `git push origin main` çalıştırılmalı.
 
+### Push koruması (01.09.2026)
+
+- `docs/playbook-migration-framework` yerel bir çalışma dalıdır (commit `a28354e`).
+  Copilot tarafından yanlışlıkla push denenmek istendi; işlem **tamamlanmadı** —
+  GitHub API doğrulamasında bu dal remote'ta yok, açık/kapalı PR da yok.
+  Engel `AGENTS.md` (`Push Politikası ve Korunan Branch'ler`) + `.git/hooks/pre-push`
+  ile iki katmana alındı. Bu dal inceleme sonrası kalıcı bir isimle yeniden
+  adlandırılarak paylaşılabilir; o zaman kara liste güncellenmelidir.
+
 ---
 
 ## Referanslar

@@ -26,6 +26,16 @@ Bu depo, geçişi tamamlanmış Ekip360 Next.js uygulamasının geliştirme ve i
 - Canlı üretim ortamında doğrudan değişiklik yapma. Yayınlama adımları için `DEPLOYMENT.md` izlenmeli ve insan tarafından onaylanmalıdır.
 - Sorun istenen değişiklikle ilgili değilse mevcut kullanıcı değişikliklerini geri alma veya üzerine yazma.
 
+## Push Politikası ve Korunan Branch'ler
+
+Aşağıdaki branch'ler **origin'e asla push edilmez**; içerikleri yalnızca yerel geliştirme ve inceleme içindir:
+
+- `docs/playbook-migration-framework` — Migration playbook çerçeve çalışması (01.09.2026'da Copilot tarafından yanlışlıkla push denendi; işlem yarım kaldı ve bu kurala bağlandı).
+
+Koruma iki katmanlıdır: bu kural dokümantasyon katmanıdır, `git` seviyesindeki mekanik engel ise `.git/hooks/pre-push` hook'udur. Kural ile hook birlikte güncellenmelidir; listeye branch eklerken/çıkarırken ikisi senkron tutulur.
+
+Bu dallardaki çalışmanın paylaşılması gerektiğinde içerik, `CONTRIBUTING.md`'deki adlandırma kuralına uyan yeni bir branch'e taşınır ve korunan dalın adı listelerden çıkarılır.
+
 ## Çalışma ve Doğrulama
 
 1. `CLAUDE.md`, `MEMORY.md`, `CONTRIBUTING.md` ve ilgili kodu oku.

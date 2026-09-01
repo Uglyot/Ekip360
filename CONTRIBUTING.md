@@ -74,6 +74,7 @@ Otomatik test bulunmayan değişikliklerde manuel doğrulama adımlarını PR a�
 ## Commit ve Pull Request
 
 - Her iş için anlamlı bir branch kullanın. Öneri: `feature/kisa-aciklama`, `fix/kisa-aciklama` veya `chore/kisa-aciklama`.
+- `AGENTS.md`'deki korunan branch listesi (örn. `docs/playbook-migration-framework`) origin'e push edilmez; bu yasak ayrıca `.git/hooks/pre-push` ile mekanik olarak uygulanır. Kapsam dışı kalır: korunan dalları remote'a iletmek, adını değiştirmeden yeniden adlandırmak veya kuralı tek taraflı (yalnızca AGENTS.md veya yalnızca hook) güncellemek.
 - Commit mesajı kısa ve açıklayıcı olsun. Örnek: `Fix: iletişim formu doğrulamasını düzelt`.
 - Bir commit mümkünse tek bir mantıksal değişikliği içersin.
 - PR açıklamasında neyin değiştiğini, neden değiştiğini, nasıl doğrulandığını ve bilinen riskleri belirtin.
