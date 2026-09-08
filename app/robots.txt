@@ -1,0 +1,57 @@
+# ekip360.net — robots.txt
+# Bu dosyayi PROJE yonetir (app/robots.txt -> Next.js metadata dosyasi, .next ile deploy edilir).
+# Cloudflare "managed robots.txt" enjeksiyonu 08.09.2026'da kapatildi; canlidaki icerigin
+# tek kaynagi burasidir. Karar kaydi: playbook/checklists/technical-audit.md (AIS-04).
+#
+# Politika: AI *arama / cevap* ajanlarina acik, AI *egitim / toplu kazima* ajanlarina kapali.
+#
+# Not 1: Arama tarafina izin verilirken Content-Signal ai-train=no duruyor. Content-Signal
+#   hukuki bir hak sakli tutma beyani, Allow ise teknik erisim iznidir — bilincli tercihtir.
+# Not 2: Cloudflare managed enjeksiyonu yeniden acilirsa CF kendi blogunu bu dosyanin SONUNA
+#   ekler ve buradaki kararlari tersine cevirir. Kapali kalmalidir.
+# Not 3: Her ajan adi bu dosyada TAM 1 kez gecer — AIS-04 grep sayimi bu sayede tek anlamlidir.
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+Allow: /
+
+# --- AI egitimi / toplu kazima: kapali ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# --- AI arama / kullanici tetikli getirme: acik ---
+# (AIS-04: listelenmemek zimni izindir; sessizlik karar sayilmaz — bu yuzden acikca yazilir.)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://ekip360.net/sitemap.xml

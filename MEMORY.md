@@ -132,6 +132,25 @@ Geçerli olan koddur:
 | Studio route | `app/studio/[[...tool]]/` | `app/yonetim/[[...tool]]/` |
 | Sanity token | `SANITY_API_TOKEN`        | `SANITY_WRITE_TOKEN`       |
 
+### robots.txt artık proje yönetiminde (08.09.2026)
+
+Öncesinde `robots.txt` **tamamen Cloudflare'in managed content bloğuydu**; repoda karşılığı yoktu.
+Teşhis yöntemi (tekrarlanabilir): canlı yanıt `# BEGIN Cloudflare Managed content` içeriyordu ve
+origin'in `x-nextjs-*` başlıklarını taşıyordu, ama var olmayan bir yol origin'den **404 text/html**
+dönüyordu — yani origin `/robots.txt` için de 404 veriyor, gövdeyi CDN yazıyordu.
+
+- Kaynak artık **`app/robots.txt`** (Next.js statik metadata dosyası). `public/robots.txt` *seçilmedi*:
+  o dosya `.next` tarball'ına girmez ve DEPLOYMENT.md Adım 5'i (ayrı `public/` yüklemesi) gerektirir —
+  `llms.txt` bu tuzağın canlı kanıtı (sunucudaki kopya 25.08.2026, repodaki 07.09.2026).
+- `app/robots.js` de *seçilmedi*: object API `Content-Signal:` satırını üretemez.
+- Politika: 7 ajan `Disallow` (GPTBot, ClaudeBot, CCBot, Bytespider, Amazonbot, Applebot-Extended,
+  meta-externalagent), 5 ajan açıkça `Allow` (Google-Extended, OAI-SearchBot, ChatGPT-User,
+  Claude-User, PerplexityBot), `Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference`.
+- **Cloudflare'de iki ayar kapalı kalmalı:** AI Crawl Control → managed robots.txt enjeksiyonu
+  (açılırsa CF kendi bloğunu dosyanın sonuna ekler ve `Google-Extended` kararını tersine çevirir) ve
+  Security → Bots → "Block AI bots" (açık kalırsa Allow verilen ajanlar edge'de 403 yer).
+- Dosyada her ajan adı **tam 1 kez** geçer; AIS-04'ün `grep -o … | wc -l` sayımı bu sayede tek anlamlı.
+
 ---
 
 ## Git Durumu (01.08.2026)
