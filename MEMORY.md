@@ -132,6 +132,41 @@ Geçerli olan koddur:
 | Studio route | `app/studio/[[...tool]]/` | `app/yonetim/[[...tool]]/` |
 | Sanity token | `SANITY_API_TOKEN`        | `SANITY_WRITE_TOKEN`       |
 
+### robots.txt artık proje yönetiminde (08.09.2026)
+
+Öncesinde `robots.txt` **tamamen Cloudflare'in managed content bloğuydu**; repoda karşılığı yoktu.
+Teşhis yöntemi (tekrarlanabilir): canlı yanıt `# BEGIN Cloudflare Managed content` içeriyordu ve
+origin'in `x-nextjs-*` başlıklarını taşıyordu, ama var olmayan bir yol origin'den **404 text/html**
+dönüyordu — yani origin `/robots.txt` için de 404 veriyor, gövdeyi CDN yazıyordu.
+
+- Kaynak artık **`app/robots.txt`** (Next.js statik metadata dosyası). `public/robots.txt` *seçilmedi*:
+  o dosya `.next` tarball'ına girmez ve DEPLOYMENT.md Adım 5'i (ayrı `public/` yüklemesi) gerektirir —
+  `llms.txt` bu tuzağın canlı kanıtı (sunucudaki kopya 25.08.2026, repodaki 07.09.2026).
+- `app/robots.js` de *seçilmedi*: object API `Content-Signal:` satırını üretemez.
+- Politika: 7 ajan `Disallow` (GPTBot, ClaudeBot, CCBot, Bytespider, Amazonbot, Applebot-Extended,
+  meta-externalagent), 5 ajan açıkça `Allow` (Google-Extended, OAI-SearchBot, ChatGPT-User,
+  Claude-User, PerplexityBot), `Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference`.
+- **Cloudflare'de iki ayar kapalı kalmalı:** AI Crawl Control → managed robots.txt enjeksiyonu
+  (açılırsa CF kendi bloğunu dosyanın sonuna ekler ve `Google-Extended` kararını tersine çevirir) ve
+  Security → Bots → "Block AI bots" (açık kalırsa Allow verilen ajanlar edge'de 403 yer).
+- Dosyada her ajan adı **tam 1 kez** geçer; AIS-04'ün `grep -o … | wc -l` sayımı bu sayede tek anlamlı.
+
+**Canlı doğrulama (08.09.2026, deploy + CF kapatma sonrası):** `Cloudflare Managed` = 0 · dosya
+imzası (`app/robots.txt`) = 1 · 12 ajanın her biri = 1 · `Disallow` = 7 · `Allow` = 6 ·
+`Google-Extended → Allow: /` · yanıt `x-nextjs-cache: HIT` (origin servis ediyor). Edge katmanı için
+UA testi: PerplexityBot / OAI-SearchBot / ChatGPT-User / Claude-User / Googlebot → hepsi 200.
+*Testin sınırı:* Cloudflare botu IP+UA ile doğrular; normal bir IP'den taklit edilen UA'nın 200
+alması "genel bir UA bloğu yok" demektir, gerçek crawler IP aralıklarını kanıtlamaz — asıl kanıt
+panelde "Block AI bots" anahtarının kapalı olmasıdır.
+
+**Security → Settings → "Cloudflare managed ruleset" (Always active) karıştırılmamalı:** o, Free
+planda kapatılamayan temel WAF setidir (exploit / DDoS / kötücül bot imzaları / API abuse) ve AI
+crawler politikasıyla ilgisi yoktur. AI tarafını yöneten anahtar Security → Bots altındadır.
+
+**Düzeltme:** 08.09 ölçümünde `https://www.ekip360.net/` 520 dönüyordu ve CF enjeksiyonu kapanınca
+www/robots.txt'in de 520 olacağı tahmin edilmişti. Gerçekleşmedi: www artık apex'e **308** veriyor
+(`www/robots.txt` → apex 200, www kökü → apex 200). Önceki 520 geçiciydi.
+
 ---
 
 ## Git Durumu (01.08.2026)
