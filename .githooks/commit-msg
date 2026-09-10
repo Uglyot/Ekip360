@@ -1,0 +1,37 @@
+#!/bin/sh
+# Ekip360 — commit mesajından oturum linklerini KESİN olarak çıkarır.
+#
+# Neden: Ekip360 PUBLIC bir depo. "Claude-Session:" satırı, o commit ile
+# ilgisiz her şeyi (başka projelerin stratejik detayları, iç tartışmalar)
+# içeren bir oturum kaydına işaret eder. 2026-09-08..10 arasında bu satır
+# üç kez public depoya girdi ve üç kez geçmiş yeniden yazılarak temizlendi.
+# Bu kanca dördüncüsünü baştan engeller.
+#
+# Davranış: reddetmez, SATIRI SİLER ve ne yaptığını söyler. Reddetmek akışı
+# kesip yazılmış mesajı kaybettirir; silmek sonucu garanti eder.
+#
+# SINIRLAR (bilerek kayıtlı):
+#   - `git commit --no-verify` bu kancayı atlar.
+#   - `git cherry-pick` / `git rebase` yeniden kullanılan mesajlarda
+#     commit-msg kancasını çağırmaz. İkinci katman pre-push'tadır.
+#   - Kanca .githooks/ altında VERSİYONLANIR, ama core.hooksPath ayarı
+#     versiyonlanmaz: yeni bir klonda `npm install` (package.json > prepare)
+#     ya da elle `git config core.hooksPath .githooks` gerekir.
+
+MSG_FILE="$1"
+[ -f "$MSG_FILE" ] || exit 0
+
+PATTERN='^[[:space:]]*Claude-Session:|claude\.ai/code/session_'
+
+grep -qE "$PATTERN" "$MSG_FILE" || exit 0
+
+N=$(grep -cE "$PATTERN" "$MSG_FILE")
+TMP="$MSG_FILE.hooktmp"
+
+# 1) eşleşen satırları at  2) sondaki fazla boş satırları kırp (tek \n bırak)
+grep -vE "$PATTERN" "$MSG_FILE" | sed -e :a -e '/^\n*$/{$d;N;ba' -e '}' > "$TMP"
+mv "$TMP" "$MSG_FILE"
+
+echo "~> [commit-msg] $N adet oturum linki satırı silindi (public depo koruması)."
+echo "   Kaynak: .githooks/commit-msg"
+exit 0
