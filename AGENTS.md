@@ -32,9 +32,26 @@ Aşağıdaki branch'ler **origin'e asla push edilmez**; içerikleri yalnızca ye
 
 - `docs/playbook-migration-framework` — Migration playbook çerçeve çalışması (01.09.2026'da Copilot tarafından yanlışlıkla push denendi; işlem yarım kaldı ve bu kurala bağlandı).
 
-Koruma iki katmanlıdır: bu kural dokümantasyon katmanıdır, `git` seviyesindeki mekanik engel ise `.git/hooks/pre-push` hook'udur. Kural ile hook birlikte güncellenmelidir; listeye branch eklerken/çıkarırken ikisi senkron tutulur.
+Koruma iki katmanlıdır: bu kural dokümantasyon katmanıdır, `git` seviyesindeki mekanik engel ise `.githooks/pre-push` hook'udur (KURAL 1). Kural ile hook birlikte güncellenmelidir; listeye branch eklerken/çıkarırken ikisi senkron tutulur.
 
 Bu dallardaki çalışmanın paylaşılması gerektiğinde içerik, `CONTRIBUTING.md`'deki adlandırma kuralına uyan yeni bir branch'e taşınır ve korunan dalın adı listelerden çıkarılır.
+
+## Oturum linki koruması (Claude-Session)
+
+Bu depo **public**. Claude Code'un commit mesajlarına ve PR açıklamalarına otomatik eklediği `Claude-Session: https://claude.ai/code/session_...` satırı, o commit'le ilgisiz her şeye — başka projelerin stratejik detaylarına, iç tartışmalara — işaret eden bir oturum kaydına bağlanır. 08–10.09.2026 arasında bu satır **üç kez** public depoya girdi ve üçünde de geçmiş yeniden yazılarak (`cherry-pick` + `--force-with-lease`) temizlendi. Koruma bu yüzden iki kancaya bölünmüştür:
+
+- **`.githooks/commit-msg`** — satırı commit oluşurken **siler** (reddetmez; reddetmek yazılmış mesajı kaybettirir) ve ne yaptığını bildirir.
+- **`.githooks/pre-push`** KURAL 2 — push edilecek her commit'in mesajını tarar, satırı taşıyan varsa push'u **reddeder**.
+
+**İkisi birden gereklidir, biri yetmez:** `commit-msg` `git commit --no-verify` ile atlanabilir ve `cherry-pick`/`rebase` yeniden kullanılan mesajlarda hiç çağrılmaz. `pre-push` bu iki boşluğu kapatır ve içeriğin public'e çıkmadan önceki son kapısıdır. Buna karşılık `pre-push` tek başına yetersizdir: satırın geçmişe yazılmasını engellemez, yalnızca yayımını durdurur — temizlik yine geçmiş yeniden yazmayı gerektirir.
+
+**Kancalar `.githooks/` altında versiyonlanır**, `.git/hooks/` altında değil; böylece klonla birlikte gelirler ve incelemeye tabidirler. Etkinleşmeleri `core.hooksPath` ayarına bağlıdır ve **bu ayar versiyonlanmaz**: yeni bir klonda `npm install` çalıştırmak yeterlidir (`package.json` > `prepare` betiği ayarı kurar), çalıştırılmıyorsa elle
+
+```sh
+git config core.hooksPath .githooks
+```
+
+Ayar kurulmadıkça kancalar dosya olarak mevcut ama **etkisizdir**; klon sonrası ilk kontrol budur.
 
 ## Çalışma ve Doğrulama
 

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:cpanel": "node server.js"
+    "start:cpanel": "node server.js",
+    "prepare": "git config core.hooksPath .githooks || exit 0"
   },
   "engines": {
     "node": ">=20.9.0"
