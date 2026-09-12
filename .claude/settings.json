@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command=\"$(jq -r '.tool_input.command // empty')\"; if printf '%s' \"$command\" | grep -qE '(^|&&|;|\\||\\$\\()[[:space:]]*gh[[:space:]]+pr[[:space:]]+(create|edit)([[:space:]]|$)' && printf '%s' \"$command\" | grep -qE 'Claude-Session:|claude\\.ai/code/session_'; then jq -n '{hookSpecificOutput:{hookEventName:\"PreToolUse\",permissionDecision:\"deny\",permissionDecisionReason:\"Command invokes gh pr create/edit and its body contains a session link (Claude-Session: or claude.ai/code/session_) - Ekip360 is a PUBLIC repo. Strip that line from the --body content before retrying. See .githooks/commit-msg and .githooks/pre-push for the sibling git-level (commit message) enforcement layers.\"}}'; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
