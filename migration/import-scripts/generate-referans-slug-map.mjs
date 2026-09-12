@@ -1,9 +1,9 @@
 // Eski /ReferansDetay/<slug>/<pk> adreslerindeki slug'lari, mevcut Sanity
 // referans basliklarindan turetilen slug'larla eslestirir.
-// Kullanim: node --env-file=.env.local scripts/generate-referans-slug-map.mjs
+// Kullanim: node --env-file=.env.local migration/import-scripts/generate-referans-slug-map.mjs
 import { createClient } from 'next-sanity'
 import { writeFileSync } from 'node:fs'
-import { normalizeSlug as slugify } from '../lib/slug-normalize.mjs'
+import { normalizeSlug as slugify } from '../../lib/slug-normalize.mjs'
 
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,

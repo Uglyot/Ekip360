@@ -222,7 +222,7 @@ CONTACT_EMAIL=
 
 ### Madde 4 — Değişen URL Şablonlarına 301
 - **Başlangıçta:** Eski URL envanteri alınmadı; `.aspx`, EN sayfalar, `/ReferansDetay/<slug>/<pk>` gibi formatların varlığı fark edilmedi.
-- **Yeniden başlasak:** Migration'dan **önce** eski sitenin `sitemap.xml`/`robots.txt`'ini envanter olarak al ve her URL için yeni karşılık üret: birebir path → 301; PK→slug gibi eşlenemeyen detaylar için slug normalizasyonuyla eşleştiren üretici script + JSON tablo (bkz. `scripts/generate-referans-slug-map.mjs` + `lib/referans-slug-map.json`); eşleşmeyenler ilgili bölüm sayfasına. Kaldırılan dil sürümlerini TR karşılıklarına yönlendir. `www`/apex ayrışmasını ilk gün çöz — ikisi de 200 servis ederse otorite bölünür.
+- **Yeniden başlasak:** Migration'dan **önce** eski sitenin `sitemap.xml`/`robots.txt`'ini envanter olarak al ve her URL için yeni karşılık üret: birebir path → 301; PK→slug gibi eşlenemeyen detaylar için slug normalizasyonuyla eşleştiren üretici script + JSON tablo (bkz. `migration/import-scripts/generate-referans-slug-map.mjs` + `lib/referans-slug-map.json`); eşleşmeyenler ilgili bölüm sayfasına. Kaldırılan dil sürümlerini TR karşılıklarına yönlendir. `www`/apex ayrışmasını ilk gün çöz — ikisi de 200 servis ederse otorite bölünür.
 
 ### Doğrulama Disiplini (tüm maddelerde işe yaradı)
 - Canlı içerik testi: `grep -c` değil `grep -o … | wc -l` (minified HTML tek satırdır) + `?cb=$(date +%s)` ile önbellek atlatma.
