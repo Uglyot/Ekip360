@@ -24,14 +24,23 @@ const CONTENT_DIR = '/Users/tolgabalikci/Documents/Projects/COWORK-OS/ekip360-we
 function decodeEntities(str) {
   if (!str) return str
   return str
-    .replace(/&#199;/g, 'Ç').replace(/&#231;/g, 'ç')
-    .replace(/&#220;/g, 'Ü').replace(/&#252;/g, 'ü')
-    .replace(/&#214;/g, 'Ö').replace(/&#246;/g, 'ö')
-    .replace(/&#304;/g, 'İ').replace(/&#305;/g, 'ı')
-    .replace(/&#286;/g, 'Ğ').replace(/&#287;/g, 'ğ')
-    .replace(/&#350;/g, 'Ş').replace(/&#351;/g, 'ş')
-    .replace(/&#39;/g,  "'").replace(/&amp;/g,  '&')
-    .replace(/&quot;/g, '"').replace(/&nbsp;/g, ' ')
+    // büyük harf varyantları ÖNCE, case-insensitive olmadan
+    .replace(/&Ccedil;/g, 'Ç')
+    .replace(/&Uuml;/g,  'Ü')
+    .replace(/&Ouml;/g,  'Ö')
+    // küçük harf varyantları
+    .replace(/&ccedil;/g, 'ç')
+    .replace(/&uuml;/g,  'ü')
+    .replace(/&ouml;/g,  'ö')
+    // tırnak/noktalama
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&ldquo;/g, '"')
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ndash;/g, '–')
+    .replace(/&hellip;/g, '…')
+    // birim
+    .replace(/&sup2;/g, '²')
     .trim()
 }
 
@@ -119,7 +128,13 @@ function parseHtml(html, category) {
 async function run() {
   // 1. Mevcut tüm referansların entity'lerini düzelt
   console.log('🔧 HTML entity\'ler düzeltiliyor...')
-  const docs = await client.fetch(`*[_type == "referans"]{ _id, title, sector, address, description }`)
+  // DRY_RUN=1 → yazma yok, eski/yeni değerleri basar. ONLY_TITLE="..." → tek kayıt.
+  const DRY_RUN = process.env.DRY_RUN === '1'
+  const ONLY_TITLE = process.env.ONLY_TITLE
+  const docs = await client.fetch(
+    `*[_type == "referans" ${ONLY_TITLE ? '&& title == $title' : ''}]{ _id, title, sector, address, description }`,
+    ONLY_TITLE ? { title: ONLY_TITLE } : {}
+  )
 
   let fixed = 0
   for (const doc of docs) {
@@ -129,6 +144,14 @@ async function run() {
     const newDesc    = decodeEntities(doc.description || '')
 
     if (newTitle !== doc.title || newSector !== doc.sector || newAddress !== doc.address || newDesc !== doc.description) {
+      if (DRY_RUN) {
+        fixed++
+        console.log(`\n  [DRY RUN] ${doc._id} | ${doc.title}`)
+        for (const [f, oldV, newV] of [['title', doc.title, newTitle], ['sector', doc.sector, newSector], ['address', doc.address, newAddress], ['description', doc.description, newDesc]]) {
+          if (oldV !== newV) console.log(`    ${f} ESKİ: ${JSON.stringify(oldV)}\n    ${f} YENİ: ${JSON.stringify(newV)}`)
+        }
+        continue
+      }
       await client.patch(doc._id).set({
         title: newTitle,
         sector: newSector,
@@ -139,7 +162,8 @@ async function run() {
       console.log(`  ✅ Düzeltildi: ${newTitle}`)
     }
   }
-  console.log(`  ${fixed} belge düzeltildi.\n`)
+  console.log(`  ${fixed} belge ${DRY_RUN ? 'düzeltilecek (dry run)' : 'düzeltildi'}.\n`)
+  if (DRY_RUN || ONLY_TITLE) return
 
   // 2. BW Eresin İstanbul'u ekle (network hatasıyla atlanmıştı)
   console.log('➕ BW Eresin İstanbul ekleniyor...')

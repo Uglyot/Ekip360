@@ -72,6 +72,11 @@ export default defineType({
       rows: 2,
     }),
     defineField({
+      name: 'website',
+      title: 'Web Sitesi',
+      type: 'url',
+    }),
+    defineField({
       name: 'order',
       title: 'Sıra',
       type: 'number',
