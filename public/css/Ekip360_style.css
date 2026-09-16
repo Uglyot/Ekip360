@@ -2315,6 +2315,29 @@ img {
   text-align: right;
   margin-top: 5px;
 }
+.RerefansDetailWrapper .SanalTurText {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
+  padding: 0px 15px;
+}
+.RerefansDetailWrapper .SanalTurText p {
+  float: left;
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #151515;
+  text-align: left;
+  white-space: pre-line; /* description'daki \n\n paragraf ve \n satır sonlarını gösterir */
+  overflow-wrap: break-word;
+}
 .RerefansDetailWrapper .SanalTurGallery {
   float: left;
   width: 100%;

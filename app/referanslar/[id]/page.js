@@ -8,9 +8,12 @@ export async function generateMetadata({ params }) {
   if (!ref) return {}
 
   const title = ref.title ? `${ref.title} — Ekip 360 Referansları` : 'Referanslar — Ekip 360'
-  // description alani metin blok array'i de olabileceginden once tip kontrolu yapilir
+  // description alani metin blok array'i de olabileceginden once tip kontrolu yapilir.
+  // Sayfadaki metin paragrafli ve uzun olabilir; meta icin tek satira indirilip ~160 karakterde kelime sinirindan kesilir.
+  const plain = typeof ref.description === 'string' ? ref.description.replace(/\s+/g, ' ').trim() : ''
+  const short = plain.length > 160 ? plain.slice(0, 157).replace(/\s+\S*$/, '').replace(/[\s,;:.–-]+$/, '') + '…' : plain
   const description =
-    (typeof ref.description === 'string' && ref.description) ||
+    short ||
     (ref.sector
       ? `${ref.title}, ${ref.sector} alanında Ekip 360 tarafından hayata geçirilen Google sanal tur projesi.`
       : `${ref.title || 'Ekip 360'} — 360° sanal tur referansı.`)
@@ -71,6 +74,13 @@ export default async function ReferansDetayPage({ params }) {
               {ref.address && <span className="Adress">{ref.address}</span>}
             </span>
           </div>
+
+          {/* Tanıtım metni — paragraflar \n\n ile ayrılı, CSS'te white-space: pre-line */}
+          {typeof ref.description === 'string' && ref.description.trim() && (
+            <div className="SanalTurText">
+              <p>{ref.description}</p>
+            </div>
+          )}
 
           {/* Galeri */}
           {gallery.length > 0 && (
