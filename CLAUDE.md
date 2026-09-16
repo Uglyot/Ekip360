@@ -198,8 +198,8 @@ Ekip-360-Next-js/
   description bloğu `white-space: pre-line` ister. Müşteri metnindeki orijinal yazım hatalarına dokunulmadı.
 
 ### Backlog
-- **Referans `website` alanı Sanity'de dolu ama frontend'de gösterilmiyor** — ayrı bir görev olarak planlandı, 2026-09-16.
-  (56 kayıtta dolu; `getReferenceById` GROQ projeksiyonuna da henüz eklenmedi.)
+- ~~Referans `website` alanı Sanity'de dolu ama frontend'de gösterilmiyor~~ — **tamamlandı 2026-09-16**:
+  detay sayfasında AdressInfo içinde "Web Sitesi: <link>" satırı (`span.Website`), yalnızca http(s) URL'lerde.
 
 ---
 

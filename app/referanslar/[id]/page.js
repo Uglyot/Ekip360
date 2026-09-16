@@ -72,6 +72,14 @@ export default async function ReferansDetayPage({ params }) {
             <span className="AdressInfo">
               {ref.telephoneNumber && <span className="Phone">{ref.telephoneNumber}</span>}
               {ref.address && <span className="Adress">{ref.address}</span>}
+              {ref.website && /^https?:\/\//i.test(ref.website) && (
+                <span className="Website">
+                  Web Sitesi:{' '}
+                  <a href={ref.website} target="_blank" rel="noopener noreferrer">
+                    {ref.website.replace(/^https?:\/\//i, '').replace(/\/$/, '')}
+                  </a>
+                </span>
+              )}
             </span>
           </div>
 

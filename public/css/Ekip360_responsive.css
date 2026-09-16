@@ -173,7 +173,8 @@
 .RerefansDetailWrapper .SanalTurDescription span.Description{width:100%;}
 .RerefansDetailWrapper .SanalTurDescription span.AdressInfo{width:100%;margin-top:15px;}
 .RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Phone,
-.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Adress{text-align:left;}
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Adress,
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Website{text-align:left;}
 .RerefansDetailWrapper .SanalTurText p{font-size:13px;line-height:22px;}
 .RerefansDetailWrapper .SanalTurGallery ul li{width:50%;}
 .RerefansDetailWrapper .SanalTurCapsule iframe,

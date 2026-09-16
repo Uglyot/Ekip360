@@ -2315,6 +2315,23 @@ img {
   text-align: right;
   margin-top: 5px;
 }
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Website {
+  float: left;
+  width: 100%;
+  height: auto;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #151515;
+  text-align: right;
+  margin-top: 5px;
+  overflow-wrap: break-word;
+}
+.RerefansDetailWrapper .SanalTurDescription span.AdressInfo span.Website a {
+  color: #151515;
+  text-decoration: underline;
+}
 .RerefansDetailWrapper .SanalTurText {
   float: left;
   width: 100%;
