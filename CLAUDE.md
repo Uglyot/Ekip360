@@ -189,6 +189,18 @@ Ekip-360-Next-js/
 - **EN sayfaları şimdilik atlama.** TR tamamlanmadan EN'e geçme.
 - **Orijinal sitede olmayan özellik ekleme.**
 
+### Kurallara bilinçli istisnalar
+- **Referans address/description ayrıştırması — 2026-09-16 — "birebir aynı" kuralından bilinçli istisna.**
+  Sebep: eski sitede tanıtım metni orijinal olarak `Adress` span'ı içinde gösteriliyordu (import hatası değil);
+  paragraf yapısı Wayback Machine arşiviyle (`web.archive.org/web/2021id_/https://ekip360.net/ReferansDetay/...`)
+  doğrulanarak `address` / `description` / `website` olarak ayrıştırıldı. `website` alanı şemaya eklendi, frontend'de
+  henüz gösterilmiyor. Description'da `</p>` sınırları `\n\n`, liste maddeleri `- ` ile satır satır; bu yüzden
+  description bloğu `white-space: pre-line` ister. Müşteri metnindeki orijinal yazım hatalarına dokunulmadı.
+
+### Backlog
+- **Referans `website` alanı Sanity'de dolu ama frontend'de gösterilmiyor** — ayrı bir görev olarak planlandı, 2026-09-16.
+  (56 kayıtta dolu; `getReferenceById` GROQ projeksiyonuna da henüz eklenmedi.)
+
 ---
 
 ## Ortam Değişkenleri (`.env.local`)
