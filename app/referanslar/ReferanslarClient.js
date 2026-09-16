@@ -82,7 +82,7 @@ export default function ReferanslarClient({ references }) {
                         )}
                         <span className="Description">
                           <span className="Title">{ref.title}</span>
-                          <p>{ref.sector || 'Sanal Tur'}</p>
+                          <p>Ayrıntı için Tıkla</p>
                         </span>
                       </a>
                     </span>
