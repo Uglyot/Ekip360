@@ -137,12 +137,15 @@ function genKey() {
 function decodeEntities(str) {
   if (!str) return ''
   return str
-    .replace(/&ouml;/gi, 'ö').replace(/&Ouml;/gi, 'Ö')
-    .replace(/&uuml;/gi, 'ü').replace(/&Uuml;/gi, 'Ü')
-    .replace(/&ccedil;/gi, 'ç').replace(/&Ccedil;/gi, 'Ç')
-    .replace(/&iuml;/gi, 'ı').replace(/&Iuml;/gi, 'İ')
-    .replace(/&gbreve;/gi, 'ğ').replace(/&Gbreve;/gi, 'Ğ')
-    .replace(/&scedil;/gi, 'ş').replace(/&Scedil;/gi, 'Ş')
+    // büyük harf varyantları ÖNCE, case-sensitive (/gi küçük harf kuralı &Ccedil; vb.'yi küçültüyordu —
+    // 2026-09-16'da blog verisinde 29 kelime bu yüzden düzeltildi)
+    .replace(/&Ouml;/g, 'Ö').replace(/&Uuml;/g, 'Ü')
+    .replace(/&Ccedil;/g, 'Ç').replace(/&Iuml;/g, 'İ')
+    .replace(/&Gbreve;/g, 'Ğ').replace(/&Scedil;/g, 'Ş')
+    // küçük harf varyantları
+    .replace(/&ouml;/g, 'ö').replace(/&uuml;/g, 'ü')
+    .replace(/&ccedil;/g, 'ç').replace(/&iuml;/g, 'ı')
+    .replace(/&gbreve;/g, 'ğ').replace(/&scedil;/g, 'ş')
     .replace(/&#199;/g, 'Ç').replace(/&#231;/g, 'ç')
     .replace(/&#220;/g, 'Ü').replace(/&#252;/g, 'ü')
     .replace(/&#214;/g, 'Ö').replace(/&#246;/g, 'ö')
