@@ -17,6 +17,9 @@ const legacyRedirects = [
   // /ReferansDetay/<slug>/<pk> ise middleware.js te slug esleme ile ozel detaya gider.
   { source: "/BlogDetail/:id", destination: "/blog" },
   { source: "/Home/ReferansDetay/:id", destination: "/referanslar" },
+  // Silinen mukerrer referans (2026-09-16): "Ortodonti Kliniği Ataşehir" 17ox kaydina birlestirildi.
+  // Yedek: migration/backups/2026-09-16/ortodonti-duplicate-backup-before-merge.json
+  { source: "/referanslar/APlZU7cpSt0Sg8o1ric82v", destination: "/referanslar/17ox3PpQLMa8F5kjsFkvVg" },
 ].map(({ source, destination }) => ({ source, destination, permanent: true }));
 
 const nextConfig = {

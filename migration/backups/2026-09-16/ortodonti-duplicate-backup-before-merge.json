@@ -1,0 +1,129 @@
+[
+  {
+    "_createdAt": "2026-07-14T16:22:42Z",
+    "_id": "17ox3PpQLMa8F5kjsFkvVg",
+    "_rev": "TXejvAWBUakhba07BUPTSO",
+    "_type": "referans",
+    "_updatedAt": "2026-09-16T14:35:48Z",
+    "address": "Ataşehir Atatürk, Ada KamelyaD1, Ataşehir Blv. No:49 D:aire:2, 34758 Ataşehir",
+    "category": "Hospitals",
+    "description": "Dişleriniz sizin için değerli olduğu kadar bizim için de değerlidir. Teknolojik gelişmelerin ortodontiye de yansıması sonucu tedavi sırasında hasta konforunu arttıran ve estetik gereksinimleri karşılayan birçok ortodontik tedavi seçenekleri sunulmaktadır.\n\nAmacımız hastalarımıza:\n- Doğal, estetik ve yüzünüzle uyumlu bir gülümseme\n- Güzel ve kalıcı bir diş dizilimi\n- Fonksiyonel diş kapanışı\n- Çene eklemi sağlığı\n- Sağlıklı dişler ve diş etleri\n- Güzel bir yüz estetiği kazandırmaktır.\n\nOrtodontik tedavi planlanırken etik değerler her zaman göz önünde bulundurulmalı ve yapılacak tedaviler her zaman tıbbi gereksinimler dahilinde olmalıdır. Teşhis ve planlama, tedavinin temeli ve en önemli aşamasıdır. Bu plan kişiye özeldir. Teşhis ve planlama bizi amacımıza yönlendirir. Tedavi planı hastanın durumu, ihtiyaçları ve beklentileri göz önüne alınarak en kısa sürede en güzel sonucu alacak şekilde yapılmalıdır ve bu amaca uygun ortodontik aygıtlar seçilmelidir. Önemli olan hastanın beklentileriyle hekimin hastaya uygulayacağı tedavinin birbiriyle uyumlu olmasıdır.\n\nOrtodonti Uzmanı Dr Özgür Ufuk Demir ve Ortodonti Uzmanı Dr Hande Biçeroğlu Demir yalnızca ortodonti tedavisi hizmeti veren kendi klinikleri Ortodonti Kliniği Gebze ve Ortodonti Kliniği Ataşehir'de tam zamanlı olarak çalışmaktadır.",
+    "gallery": [
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-300eb6b971d9c1fcb3cff22403964c1cce279243-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-37cfe90ad6b190ab0da06eedaeb685e5d9346445-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-db53f156ec994ddb5b10557f59f7feaca6993a5c-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c077df181859af330a2bc683eecc0c7f5204d53e-1000x667-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "order": 7,
+    "sector": "",
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!4v1611582095811!6m8!1m7!1sCAoSK0FGMVFpcFBMQUY2dFZBREJpV3hQRzYwanNBX05TVWR6TWJBa3lMUkVEXzQ.!2m2!1d40.99171497478245!2d29.13199553678442!3f79.02929015506095!4f-2.8204262521867776!5f0.7820865974627469",
+    "telephoneNumber": "0216 455 23 32",
+    "thumbnail": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8d2ef396cc9c2a4b578a19c1b866b12117f75ade-1000x667-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "Ortodonti Kliniği Ataşehir",
+    "website": "http://www.ortodontiklinigi.com/"
+  },
+  {
+    "_createdAt": "2026-07-14T16:26:33Z",
+    "_id": "APlZU7cpSt0Sg8o1ric82v",
+    "_rev": "E9Zo7j21o0Y5ktaSGsut5k",
+    "_type": "referans",
+    "_updatedAt": "2026-09-16T14:35:49Z",
+    "address": "Ataşehir Atatürk Mahallesi, Ataşehir Bulvarı, 49 Ada KamelyaD1 4.Blok, Daire:2, 34758 Ataşehir/İstanbul, Türkiye",
+    "category": "SmallBusiness",
+    "description": "Dişleriniz sizin için değerli olduğu kadar bizim için de değerlidir. Teknolojik gelişmelerin ortodontiye de yansıması sonucu tedavi sırasında hasta konforunu arttıran ve estetik gereksinimleri karşılayan birçok ortodontik tedavi seçenekleri sunulmaktadır.\n\nAmacımız hastalarımıza:\n- Doğal, estetik ve yüzünüzle uyumlu bir gülümseme\n- Güzel ve kalıcı bir diş dizilimi\n- Fonksiyonel diş kapanışı\n- Çene eklemi sağlığı\n- Sağlıklı dişler ve diş etleri\n- Güzel bir yüz estetiği kazandırmaktır.",
+    "gallery": [
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-f1505b21873b7ed6d211e8eaee0fd9f4943d46c7-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-300eb6b971d9c1fcb3cff22403964c1cce279243-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c077df181859af330a2bc683eecc0c7f5204d53e-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-db53f156ec994ddb5b10557f59f7feaca6993a5c-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-37cfe90ad6b190ab0da06eedaeb685e5d9346445-1000x667-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-f74c0ee6cdd769412c3b68546e762cbaca3f1898-533x800-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_type": "image",
+        "asset": {
+          "_ref": "image-f0b55be5f1fa0bf756e2fc1f3437c86cbe5f2c31-533x800-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "order": 3,
+    "sector": "Sağlık",
+    "streetViewUrl": "https://www.google.com/maps/embed?pb=!1m0!3m2!1str!2s!4v1492093219759!6m8!1m7!1sISld5D6HkrIAAAQ3syWafQ!2m2!1d40.9917022188311!2d29.13198500237081!3f194.22465580616782!4f-8.721988247839022!5f0.7820865974627469",
+    "telephoneNumber": "+90 216 455 23 32",
+    "thumbnail": {
+      "_type": "image",
+      "asset": {
+        "_ref": "image-fa1547306bc2cf56eee4880496ae6dc2265fb183-1000x667-jpg",
+        "_type": "reference"
+      }
+    },
+    "title": "Ortodonti Kliniği Ataşehir",
+    "website": "http://www.ortodontiklinigi.com/"
+  }
+]
