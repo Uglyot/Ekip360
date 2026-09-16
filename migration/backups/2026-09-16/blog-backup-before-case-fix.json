@@ -1,0 +1,2256 @@
+[
+  {
+    "_createdAt": "2026-07-14T16:56:31Z",
+    "_id": "0M9JjQcwbs3OV9oEspKSMv",
+    "_rev": "0M9JjQcwbs3OV9oEspKSJ2",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:56:31Z",
+    "body": [
+      {
+        "_key": "146y59",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "15j5iq",
+            "_type": "span",
+            "marks": [],
+            "text": "İnsanlar sizi aradığında tam da orada olmak için neler yapmalıyım diyorsanız, işletmenizin kapılarını Google'a açma zamanı çoktan geldi. öncelikle işletmenizin varlığını göstererek sonrasında ise farklı yönlerinizi ön plana çıkartabilirsiniz. Nasıl mı?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "16yjph",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "17467z",
+            "_type": "span",
+            "marks": [],
+            "text": "Google My Business ile işletmenizin yerel veya genel nasıl göründüğünü ücretsiz olarak yönetebilirsiniz. öncelikle işletmenize ait bilgileri doğru ve eksiksiz girin."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "18jodr",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-6f05249e04b84677b23572296512442e6cd70b5d-1200x800-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "19a9q0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1akvxh",
+            "_type": "span",
+            "marks": [],
+            "text": "İşletme kaydı oluşturmak sizi müşterilerinize bir adım daha yaklaştırır. örneğin; aynı anda yapmanız gereken iki önemli işiniz var ve bunlardan biri de sevgilinizin doğum gününü kutlayabileceğiniz bir mekan aramak, cep telefonunuzdan Google'a girerek 'doğum günü mekanları'' şeklinde arama yaptığınızda, size en yakın mekanlar karşınıza çıkar. Burada işinizi kolaylaştıran hamle bu mekanın telefon numarasını ana ekranda kolaylıkla görmek ve kısa sürede arayabilmektir. Bu kolaylığı müşterinize sağladığınız yol ise Google My Business (Google Benim İşletmem) aracıdır. Bu yüzden Google İşletme kaydında oluşturduğunuz bilgiler (adres, telefon, çalışma saati, menü url'leri vb.) güncel olmalıdır. Google My Business kaydınızı görsel içeriklerle süslemek ise sizin farklı yönlerinizi açığa vurur. Tıpkı sizin gibi işletme kaydı bulunan bir firmayla internet ortamındaki farkınızı yaratmak, Google My Business' te aramalar'da ve haritalar'da müşterinize 360 Derece Sanal Tur ile işletmenizi gezdirmekten geçiyor. Müşterilerinizle etkileşiminizi artırmak için onlara kapılarınızı açın."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1bln70",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-18db8ea0430e9639510ae12fb47f3b50a52369bc-627x427-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "1cxaiu",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1d10n8",
+            "_type": "span",
+            "marks": [],
+            "text": "Google My Business – Aramalarda ve Haritalar'da yerinizi 360 derece sanal tur ile almak için bizden , EKİP 360 'dan destek alabilirsiniz. EKİP 360 Sanal Tur Hizmetlerinizden alacağınız 360 derece panoramik fotoğraflarla hazırlanan turunuz müşteriye adeta oradaymış hissi katar. İşletmenizin güvenilirliğini artırmakla kalmayıp daha kaliteli müşteri deneyimine ne dersiniz?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1e8vrj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1fz8wj",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1gw0mp",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-15",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "131wmn",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8d6b0dd45a6ca83d6e4cc0e4dc1d89d6bf0673ce-512x512-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-06-11T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-my-business-aramalarda-ve-haritalarda-yerinizi-360-derece-sanal-tur-ile-alin"
+    },
+    "summary": "İnsanlar sizi aradığında tam da orada olmak için neler yapmalıyım diyorsanız, işletmenizin kapılarını Google'a açma zamanı çoktan geldi. öncelikle işletmenizin varlığını göstererek sonrasında ise farklı yönlerinizi ön plana çıkartabilirsiniz. Nasıl mı?",
+    "title": "Google My Business – Aramalar'da ve Haritalar'da Yerinizi 360 Derece Sanal Tur ile Alın !"
+  },
+  {
+    "_createdAt": "2026-07-14T16:56:36Z",
+    "_id": "0M9JjQcwbs3OV9oEspKSo8",
+    "_rev": "0M9JjQcwbs3OV9oEspKSkF",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:56:36Z",
+    "body": [
+      {
+        "_key": "1incmg",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1jv3iu",
+            "_type": "span",
+            "marks": [],
+            "text": "Google My Business (Google Rehber) girişinize 360 Derece Sanal Tur ile yapabilirsniz. İşletmenizin Google aramalarda (arama motoru ve haritalar) ücretsiz olarak yer almasını sağlayan Google My Business girişinize 360 Derece Sanal Tur ekleyebildiğinizi biliyor muydunuz? Hem de Google Street View ile entegre olarak!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1kjsbx",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1lq7c3",
+            "_type": "span",
+            "marks": [],
+            "text": "Büyüğü ve küçüğü bütün işletmeler Google da yer almak için Google My Business i kullanırlar. Ama bütün bu büyük ve küçük işletmeler (ayırım yapmadan) Google My Business in potansiyelini maalesef kısmen kullanabilmektedirler. Bu da aslında onların kendi potansiyellerinin kısmen kullanılması anlamına gelir. çünkü günümüzde müşteri ile buluşmanın tartışmasız en önemli platformu internettir. İnternetin tartışmasız en büyüğü ise Google."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1mrx2j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1n8xq9",
+            "_type": "span",
+            "marks": [],
+            "text": "Şayet lokal bir işletmeniz varsa Google My Business müşterilerinizin sizi adınızla tanımasına ve sizinle arkadaşınız gibi iletişim kurmanıza olanak sağlar. Dolayısıyla müşteriniz artık bir arkadaşın yaptığı en iyi şeyi yapar ve diğer arkadaşlarına sizi tanıtır! Hakkınızda daha fazla bilgi sahibi olmak isteyen bu potansiyel yeni arkadaşlarınız sizi Google da aramak ve sizi daha yakından tanımak isterler. Artık onlarla iletişim içinde olacağınız muhteşem bir sosyal medya mecrasına kavuşmuş olursunuz. İşte bütün bu potansiyeli harekete geçirmek için yapacağınız şeylere bir yenisi daha eklendi. 360 Derece Sanal Tur ile ağırlama. Google My Business girişinizi artık 360 Derece Sanal Tur ile gerçekleştirip müşterilerinize çok daha keyifli bir ziyaretçi deneyimi yaşatıp onları cezbedebilirsiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1okq0h",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-692a9dcc7529fe3ced8c1d7d3a4ee82ff12987ff-940x470-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "1po7sc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1qehn7",
+            "_type": "span",
+            "marks": [],
+            "text": "Tabi ki bu hizmeti Google ücretsiz olarak host etmekte ve basit birer kodla hem kendi sitenize hem de facebook ta yeni bir sekmede yayınlamanıza da olanak sağlamaktadır. Sadece 1 seferliğine ödeme yapacağınız kişi veya kuruluşlar ise Google Street View Güvenilir Profesyonlleridir. Siz de bu eşsiz olanaktan yararlanmak, Google My Business 360 Derece Sanal Tur hizmeti ile müşterilerinizi ağırlamak için bizi arayabilirsiniz. İletişim."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1r7pil",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1seki8",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1tr0b0",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-15",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "1hs84r",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8be9dbe7847d2338681f697352ba840c948eb184-400x267-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-05-25T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-my-business-girisinizi-360-derece-sanal-tur-ile-yapin"
+    },
+    "summary": "Google My Business (Google Rehber) girişinize 360 Derece Sanal Tur ile yapabilirsniz. İşletmenizin Google aramalarda (arama motoru ve haritalar) ücretsiz olarak yer almasını sağlayan Google My Business girişinize 360 Derece Sanal Tur ekleyebildiğinizi biliyor muydunuz? Hem de Google Street View ile ",
+    "title": "Google My Business Girişinizi 360 Derece Sanal Tur ile yapın !"
+  },
+  {
+    "_createdAt": "2026-07-14T16:56:46Z",
+    "_id": "0M9JjQcwbs3OV9oEspKUFX",
+    "_rev": "0M9JjQcwbs3OV9oEspKUBe",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:56:46Z",
+    "body": [
+      {
+        "_key": "2832k3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "29t7fq",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Sokak Görünümü (Street View) şu ana kadar ismi ile mütenasip bir izlenimle sınırlı kalmış gibi görünse de, işletmelerin 360 Derece İç Mekan çekimlerinin de (VR uyumlu sanal turları) Google Haritalarda Street View ile entegre olarak yer almasıyla beraber artık bu sınırlarda ortadan kalkmış oldu. Türkiye'de daha çok yeni sayılabilecek bu özellik sayesinde işletmeler, kendi 360 Derece İç Mekan çekimleri için Google Street View Güvenilir Profesyonellerine (Fotoğrafçılar) başvurularını yaparak bu ayrıcalıklı hizmetin bütün faydalarından istifade edebilirler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2ax15d",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-687e805797be29e47686c3b0f7042d9109d957cd-1367x504-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2badp6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2ccb7j",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Haritalar özelliğinin bir alt hizmet türü olarak başlattığı Google Street View özelliği nin bütün dünya genelinde yaratmış olduğu sansasyon ve üzerinde yapılan sonu gelmez spekülasyon ve yorumlara rağmen hayatımıza getirdiği kolaylıkları kimse inkar edemiyor. Şimdi de Google Benim İşletmem (My Business) ile ilişkilendirdiği 360 Derece İç Mekan çekimleri (İşletme Görünümü) özelliği ile işletmelere ve son kullanıcılara yepyeni bir deneyimin kapılarını aralayarak bu konudaki kullanım olanaklarının sınırlarını hayal gücünün sınırlarına kadar genişletmiş oldu."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2diyjj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2ejl79",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Benim İşletmem 360 derece İç Mekan çekimleri sayesinde işletmeler artık müşterilerine internet ortamında sanal bir karşılama düzenleme imkanına kavuşmuş oldular. Bunu yapmak isteyen işletme önce Google Benim İşletmem de ücretsiz bir hesap açar ve firma künyesini oluşturur. Girişi tamamladığında adresine bir doğrulama kodu gönderilir. Doğrulamasını tamamlamış işletme artık müşterilerine kendi hakkındaki tüm bilgileri listelenen kaydından sunabilir. Bu kayıtla Google aramalar ve Google Haritalar da artık hep ön planda olur. Müşterileriniz sizin hakkınızda doğru bilgilere ulaşıp tek tıkla sizinle iletişime geçebilir. Mutlu müşterileriniz sizin hakkınızda yorum bırakarak bir bakıma sizin yerinize konuşur. 360 Derece İç Mekan çekimleri ile de müşteriler sizi her aradıklarında işletmenizi yakından görebilirler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2f9yb8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2ganro",
+            "_type": "span",
+            "marks": [],
+            "text": "Sorularınız ve çekim talepleriniz için : iletişim.."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2h3ax8",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2ie56e",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2jmfsi",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-15",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "2751wu",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-4bc4d8079f2c16ba0921989350765bbba1cde69d-900x900-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-05-22T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-benim-isletmem-360-derece-ic-mekan-cekimleri"
+    },
+    "summary": "Google Sokak Görünümü (Street View) şu ana kadar ismi ile mütenasip bir izlenimle sınırlı kalmış gibi görünse de, işletmelerin 360 Derece İç Mekan çekimlerinin de (VR uyumlu sanal turları) Google Haritalarda Street View ile entegre olarak yer almasıyla beraber artık bu sınırlarda ortadan kalkmış old",
+    "title": "Google Benim İşletmem - 360 Derece İç Mekan Çekimleri"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:51Z",
+    "_id": "0M9JjQcwbs3OV9oEspKcDC",
+    "_rev": "0M9JjQcwbs3OV9oEspKc9J",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:51Z",
+    "body": [
+      {
+        "_key": "68tio7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "697jys",
+            "_type": "span",
+            "marks": [],
+            "text": "Bugün bilinen bütün ticari (veya vakıf), büyük veya küçük bütün işletmeler Google Haritalarda yer almak isterler. çünkü Google haritalarda listelenmenin, bulunur olmakla eş anlamlı olduğunu çok iyi bilirler. Ve yine bütün işletmeler, bunu yapmak için öncelikle Google My Business (Google İşletmem) de bir hesap açmaları ve bunu doğrulatmaları gerektiğini de gayet iyi bilirler. İşletme sahibi, IT çalışanı veya destek firması, bu işten işletme adına her kim sorumlu ise dakikalar içinde bu kaydı gerçekleştirebileceğini bilir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6an1si",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-98f6ae5b34a16ff915feb30e52bea472f72b59a2-1600x790-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "6ba3sn",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6c85ga",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Haritalar da yerini almış olan firmalar bundan sonra artık Google + hesaplarından işletmelerinin iletişim bilgilerini, çalışma saatlerini, faaliyet konularını, felsefelerini, fotoğraflarını yayına alabilir ve tek merkezden bütün bu işlemleri yönetebileceğini bilir. İşletme sayısı ister 1 olsun ister 100 bütün bu işlemler artık ellerinin altındadır. Google da ziyaretçileri yorum bırakabilirler ve aynı şekilde yorumlara karşılık verebilirler. Evet bu işlemleri en küçüğünden en büyüğüne bütün işletmeler çok iyi bilirler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6d1l10",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6e3v1g",
+            "_type": "span",
+            "marks": [],
+            "text": "Ama Google 'da, birçok işletmenin bilmediği ve çok önemli olan bir özellik daha var! Google Haritalarda işletmeler 360 derece sanal turlarını (+ VR) yayınlayabilmektedirler!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6fm2gr",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6g3fpx",
+            "_type": "span",
+            "marks": [],
+            "text": "Profesyonellerin bu hizmeti bilememeleri 2 nedene dayanır:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6h85hy",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6irzhv",
+            "_type": "span",
+            "marks": [],
+            "text": "Sistem Google Street View ile entegre olduğundan ki, Türkiye de bu teknoloji daha geçen sene hizmete alınmıştır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6jw7mp",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6km0s8",
+            "_type": "span",
+            "marks": [],
+            "text": "Emek yoğun olduğundan dolayıdır ki, çok fazla profesyonel istihdam etmeye gerek duyulur. Google bunun yerine anlaşma yaptığı belirli sayıda Güvenilir Profesyonel ile çalışmayı tercih etmiştir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6lk3uo",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6mou9s",
+            "_type": "span",
+            "marks": [],
+            "text": "Şayet siz de, Google Haritalar ın Türkiye için bu çok yeni ve muhteşem hizmetini ilk olarak bu yazımızı okuyarak öğrendiyseniz ve Google İşletme Görünümü (Business View) hizmeti satın almak için 10 iyi sebep adlı makalemize göz atarak müşterilerinize en önemli anlarda görünür olmanın fırsatlarından yararlanmak isterseniz, tamamı Google Güvenilir Profesyonelleri listesinde yer alan ekibimiz ile sizlere hizmet vermekten mutluluk duyacağız."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6n8bo2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6oikim",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6p5uqt",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-11",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "67qrgz",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-be84fda16b1cfa8f3b83c57788b83fee93f1b6e8-620x400-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-01-12T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-haritalara-isletmenizin-360-derece-sanal-turunu-ekleyin"
+    },
+    "summary": "Bugün bilinen bütün ticari (veya vakıf), büyük veya küçük bütün işletmeler Google Haritalarda yer almak isterler. çünkü Google haritalarda listelenmenin, bulunur olmakla eş anlamlı olduğunu çok iyi bilirler. Ve yine bütün işletmeler, bunu yapmak için öncelikle Google My Business (Google İşletmem) de",
+    "title": "Google Haritalara işletmenizin 360 Derece Sanal Turunu ekleyin !"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:08Z",
+    "_id": "17ox3PpQLMa8F5kjsFsq1g",
+    "_rev": "17ox3PpQLMa8F5kjsFspxg",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:08Z",
+    "body": [
+      {
+        "_key": "30vbb5",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "31t8y6",
+            "_type": "span",
+            "marks": [],
+            "text": "Google 360 Derce Görünüm ile işletmelerin kendilerini sanal tur ile tanıtmalarına olanak sağlıyor. Bu çok önemli tanıtım fırsatını akredite ettiği Google Güvenilir Profesyonel Fotoğrafçıları aracılığıyla gerçekleştiriyor. İşletmeler kendi Google İşletme hesapları aracılığıyla daha önceden sadece fotoğraf yükleme şansına sahiptiler. Son yıllarda ivmesi hızlanan sanal tur ve VR teknolojisinin rüzgarı ile artık çok daha ileri teknoloji ürünü bu tanıtım modelini, Google kendi plartformuna taşımayı ve sahibi olduğu Google Street View teknolojisi ile entegre etmeyi başardı."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "329wr3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "33lbbs",
+            "_type": "span",
+            "marks": [],
+            "text": "Şimdi hedef kitleniz her nereden sitenize ulaşırsa ulaşsın aynı zamanda işyerinize online sanal tur ile de bağlanabiliyor, dahası VR teknoloji kullanarak oradaymış gibi içinde gezebiliyor! İşte bu muhteşem tanıtım fırsatını yakalamanız artık bir telefon kadar uzağınızda!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "34stbq",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-6559d088835493109ccb2856bb841aa96c281129-1200x595-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "35ockx",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "36lptu",
+            "_type": "span",
+            "marks": [],
+            "text": "Google 360 Derece Görünüm hizmetinin sunduğu imkanların neler olduğundan bir başka makalemizde bahsetmiştik.. Biz bu makalemizde bu teknolojinin bizleri daha nerelere taşıyabileceğinden bahsedelim. Google Güvenilir Profesyonelleri olarak bizler yeniliklerin ardı arkasının kesilmediği bambaşka bir süreci yaşamaktayız. öyle görünüyor ki Google 360 Derece Görünüm teknolojisinin daha bebek adımları ile karşı karşıyayız. Ki bu bile baş döndürücü bir gelişme. Yakın gelecekte insanlar online bağlanarak istedikleri restaurantın içinde gezip, etraftaki bütün masalara sanal tur ile oturup örneğin evlenme teklifini en güzel hangi masada yapabileceklerine karar verip daha sanal turun içinde iken o \"özel\" masanın rezervasyonunu yaptırabilecekler. Veya özel bir hastanenin imkanlarını yanlarında sanal bir rehber olarak bulunan teknik bir personelin anlatımıyla oradaymış gibi gezebilecekler. Evden çıkmadan, anında !"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "37ysj6",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-655800233b8450331635fd8cfc80f919301bcbd8-1015x477-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "38cxcl",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "39e10i",
+            "_type": "span",
+            "marks": [],
+            "text": "Google 360 Derece Görünüm ile işletmenizi hemen tanıtmaya başlamak ve hatta bunu kendi sitenizde ve facebook sayfanızda da yapabilmek için hemen bizi arayabilirsiniz. Bu yepyeni maceraya birlikte başlayalım."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3ab2m2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3bvbz7",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3cn7nt",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-10",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "2znq8g",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-1d36550af4c6853fb96527cb0990d7b5ff1699e2-512x512-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-02-26T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-360-derece-gorunum-ile-tanitim"
+    },
+    "summary": "Google 360 Derce Görünüm ile işletmelerin kendilerini sanal tur ile tanıtmalarına olanak sağlıyor. Bu çok önemli tanıtım fırsatını akredite ettiği Google Güvenilir Profesyonel Fotoğrafçıları aracılığıyla gerçekleştiriyor. İşletmeler kendi Google İşletme hesapları aracılığıyla daha önceden sadece fot",
+    "title": "Google 360 Derece Görünüm ile Tanıtım"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:15Z",
+    "_id": "17ox3PpQLMa8F5kjsFsrFg",
+    "_rev": "17ox3PpQLMa8F5kjsFsrBg",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:15Z",
+    "body": [
+      {
+        "_key": "3el1td",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3fmptj",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Sanal gerçeklik teknolojisini çok sevdi. Ve bu teknolojiye en çok gerek duyacak kesimlerin hizmetine sunmaktan geri kalmadı. İşletmeler ! Giderek artan bir ilgi ile işletmeler artık bu yeni teknoloji ile tanışmaktalar."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3gyyz1",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-ded059410e10d942fdf19e29543a27e542e81734-700x394-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "3hqggi",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3iznfp",
+            "_type": "span",
+            "marks": [],
+            "text": "İşletmenizi yeni açtınız veya restore ettirdiniz ve şimdi artık müşterilerinizi bekliyorsunuz. Peki onları daha dün akşam evde bilgisayarının başında sevgilisini güzel bir restoran da yemeğe çıkarmak için Google da arama yapan bir gence veya o sırada civardan geçmekte olan ve Google Haritasını açmış yerli veya yabancı bir turiste önceden 360 derece gezdirmek istemez misiniz?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3jnnnc",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3kes4b",
+            "_type": "span",
+            "marks": [],
+            "text": "Tabii ki istersiniz ama sanırım her şeyden önce bir fotoğraf çalışması yapmayı aklınızdan geçiriyorsunuz. Durun bir dakika! Devir hesap devri. Siz henüz Google 360 derece fotoğraflarınızı çektirmediyseniz bir de ayrıca fotoğraf çalışması yaptırmanıza gerek yok ki. Google Street View Güvenilir Profesyonelleri Google 360 derece fotoğraf çalışması yaparken aynı zamanda HDR stil fotoğraf çalışması da yapıyorlar. üstelik ek bir ücret talep etmeden !"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3l515c",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-a69a4011d5f370b120674af5a0225acacf394c53-524x524-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "3mon84",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3no0c7",
+            "_type": "span",
+            "marks": [],
+            "text": "Google 360 derece fotoğraflarınız ve normal fotoğraf çalışması, hepsi için Ekip 360 ı arayabilirsiniz!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3o79z6",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3ps629",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3qp9h6",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-15",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "3d06hu",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-fc91cf22d8a04db6b23fc75510f90bc347f92fbf-800x799-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-02-19T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-360-derece-fotograflarinizi-cektirdiniz-mi"
+    },
+    "summary": "Google Sanal gerçeklik teknolojisini çok sevdi. Ve bu teknolojiye en çok gerek duyacak kesimlerin hizmetine sunmaktan geri kalmadı. İşletmeler ! Giderek artan bir ilgi ile işletmeler artık bu yeni teknoloji ile tanışmaktalar.",
+    "title": "Google 360 Derece Fotoğraflarınızı çektirdiniz mi?"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:24Z",
+    "_id": "17ox3PpQLMa8F5kjsFssXg",
+    "_rev": "17ox3PpQLMa8F5kjsFssTg",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:24Z",
+    "body": [
+      {
+        "_key": "3s24tu",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3t2ac9",
+            "_type": "span",
+            "marks": [],
+            "text": "Google işletme kaydı Google ın ücretsiz bir hizmetidir ve firmanızı Google aramalar ve Google haritalarda var olması demektir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3uvzg4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3vkjri",
+            "_type": "span",
+            "marks": [],
+            "text": "Google işletme kaydınızı birkaç adımda rahatlıkla buradan yapabilirsiniz. Karşınıza çıkan sorunlarla ilgili bütün cevapları da buradan dikkatli bir tarama ile rahatlıkla ulaşabilirsiniz. Bununla beraber bu işlerle uğraşacak zamanınız yok ve profesyonel destek almak istiyorsanız Google Güvenilir Profesyonelleri olarak asıl işimiz işletmenizin Google 360 derece fotoğraflarını çekmek de olsa bu konuda ki bilgi birikimimizi tıpkı Google gibi sizinle ücretsiz olarak paylaşıyoruz. (Müşterimiz olmasanız dahi.) Bizden Google 360 Derece Fotoğraf hizmeti alan ve ilk defa Google İşletme kaydını bizim aracılığımızla oluşturacak olan müşterilerimizin tabii ki alacağı bir takım ayrıcalıklar da var!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3wisi5",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-c4ca602b620d0d46a6d60eb508c225b738fbc44e-475x360-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "3xozef",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "3y1klx",
+            "_type": "span",
+            "marks": [],
+            "text": "Google a işletme kaydı son derece basit işlemler dizisi ile gerçekleştiriliyor da olsa her işte olduğu gibi bir takım aksilikler yaşamanız her zaman olasıdır. Her şey bir yana Google da işletme kaydınızın doğrulamasını yaptırmak bile başlı başına bir süreçtir ve çoğunlukla adresinize posta yolu ile gönderilecek bir doğrulama koduna bağlanmıştır. Bu ise ülkemizde en iyi ihtimalle 2 haftalık bir süreç demektir. Şayet Google da ki varlığınızın dört başı mamur olmasını ister de bir de işletmenizin Google 360 derece sanal turu ile şenlendirmek isterseniz, Ekip 360 olarak sizinle birlikte yapacağımız ilk Google işletme kaydınızın onay sürecini 2-3 güne kadar indirebiliyoruz ! (Belli bazı kriterleri yerine getirmeniz şartı ile)"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "3z9vjk",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-72f37a253f88ef6fa93e5123dda4ffabe8e9db39-525x143-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "40flbv",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "41vrfr",
+            "_type": "span",
+            "marks": [],
+            "text": "Müşterilerimiz ayrıca kendilerine vereceğimiz çok değerli SEO ip uçlarını da bizden öğrenme ve uygulama şansına sahip olacaklar. Evet, Google 360 derece fotoğraf hizmeti alan bütün müşterilerimiz bu ayrıcalıklardan hiçbir ekstra ücret ödemeden istifade edebilecekler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "42qu08",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "43w0bm",
+            "_type": "span",
+            "marks": [],
+            "text": "Peki, Google İşletme Kaydınız Var. Google 360 Derece Fotoğraflarınızı çektirdiniz mi?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "44pq55",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "45sw8k",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "46tnas",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-15",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "3rwhtq",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-3e21856336f2099c1c5fe819bcf35bbde34e383c-300x300-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-02-16T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-isletme-kaydiniz-var-mi-google-360-derece-fotograflar"
+    },
+    "summary": "Google işletme kaydı Google ın ücretsiz bir hizmetidir ve firmanızı Google aramalar ve Google haritalarda var olması demektir.",
+    "title": "Google İşletme Kaydınız Var mı? – Google 360 Derece Fotoğraflar"
+  },
+  {
+    "_createdAt": "2026-07-14T16:56:22Z",
+    "_id": "APlZU7cpSt0Sg8o1rik3cC",
+    "_rev": "APlZU7cpSt0Sg8o1rik3Xd",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:56:22Z",
+    "body": [
+      {
+        "_key": "27h09",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "33nxt",
+            "_type": "span",
+            "marks": [],
+            "text": "Bu soruyu cevaplamadan önce şu sorunun cevabına bir yanıt aramak bize yol gösterebilir: Bir Google Street View Güvenilir Profesyonel Fotoğrafçısı nasıl olunur? Bu teknik konuyu, aynı kelimeleri Google da yazıp arttığınızda karşınıza çıkacak \"Güvenilir olmak için gerekenler\" linkine tıklayıp (Google.com un kriterleridir) rahatlıkla öğrenebilirsiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4fwx6",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-11633b80a60dc3939d3464c421ef84483f1bcd8b-1600x900-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "5effd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "62rts",
+            "_type": "span",
+            "marks": [],
+            "text": "Fotoğrafçılıkla ve özellikle 360 derece fotoğraf sanatı ile uğraşıyorsanız ve belli bir bilgi birikimine sahipseniz okuduklarınızdan sonra bu konuda \"ortalama\" bir sanal tur fotoğrafçısının bile bu özellikleri yerine getirebileceğini rahatlıkla anlayacaksınız demektir. Bunu akredite fotoğrafçılar listesine baktığınızda da kolaylıkla çıkarımsayabileceksiniz. Peki, biz fotoğrafçılar değil ama siz, sizler firmanızın tanıtımını \"ortalama\" bir sanal tur fotoğrafçısının eline bırakabilir misiniz? İşletmeniz için çok önemli olacak böyle bir çalışmayı başlatmadan ve gereksiz para ve zaman kaybına neden olabilecek bir kaza yaşamadan önce \"Güvenilir Profesyonel\" olmak ile \"ortalama\" olmak arasındaki farkı işletme sahiplerine hangi kriterler gösterecektir? İşte size birkaç kontrol noktası!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "76fn8",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-7e2816f021ac4f963632a2ea5c7febe633704717-235x327-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "8yt3q",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "9eavg",
+            "_type": "span",
+            "marks": [],
+            "text": "Kendilerini size nasıl tanıtıyorlar!! Bizler Google Street View Güvenilir Profesyonelleri olarak Google çalışanları değiliz! Google ile belli kurallar çerçevesinde çalışır ve onların bize gönderdiği Google Street View Güvenilir Rozetlerimizi tanıtım metaryallerimizde, kartlarımızda kullanabilir, bu meyanda Google için çalıştığımızı söyleyebiliriz ancak biz Google çalışanıyız veya Google dan geliyoruz şeklinde aldatıcı bir yaklaşım sergileyemeyiz. Bu kurallar bize açık bir şekilde izah edilmiştir ve aksi davranışlar neticesinde rozetimiz elimizden alınır. O nedenle, kendilerini Google çalışanı olarak gösterenlere veya ima edenlere lütfen güvenmeyiniz. Ayrıca sizinle irtibat kuran kişinin hakikaten Google Street View Güvenilir Profesyoneller listesinde akredite olup olmadığını kontrol edin."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "aha81",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "biy29",
+            "_type": "span",
+            "marks": [],
+            "text": "Yaptığımız işin mahiyeti konusunda aşırı derecede abartmaya gidenlere itibar etmeyiniz! Bu hizmet sizi anında Google aramalarda en üst sıralara çıkaracaktır söylemi maalesef piyasada sıkça duymaya başladığımız aldatıcı bir argümandır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "c93l3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "dkh61",
+            "_type": "span",
+            "marks": [],
+            "text": "Size sunabildikleri ve çerçevesi çok iyi çizilmiş, her iki tarafın hak ve yükümlülüklerini detaylı bir şekilde belirttikleri sözleşmeleri var mı? Piyasada maalesef sözleşmesi bile olmadan çalışabilen fotoğrafçılar olabilmektedir. Bu durum sizi ciddi hak kayıplarına uğratabilir. Bu konuyu size hızlı bir şekilde aydınlığa kavuşturmanızı sağlayacak çok basit bir yöntem önerelim. İyi bir sözleşmeye sahip firmalar portföylerinde önemli müşterilere sahiptirler. çünkü büyük firmalar sözleşmelerini her zaman avukatları aracılığıyla kontrolden geçirip onlara onaylatırlar!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "esi4w",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "f63tq",
+            "_type": "span",
+            "marks": [],
+            "text": "Listede yer alan akredite fotoğrafçıların çalışmalarını sergilediği kendi internet sitelerine bağlantıları (link) var mı?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "gmq6j",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "hv0j7",
+            "_type": "span",
+            "marks": [],
+            "text": "Fotoğrafçılar kendi sitelerini ne kadar profesyonelce hazırlamışlar? Siteleri kendi adlarının başında yer alan \"Profesyonelliği\" ne kadar yansıtıyor? Yani kendileri de site yapımında başkalarının Profesyonelliklerinden yararlanmışlar mı?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "iu461",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "jxuic",
+            "_type": "span",
+            "marks": [],
+            "text": "Fotoğrafçıların yaptığı çalışmalarda kendi isim ve ünvanları gerçekten var mı?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "k4ggp",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "lx2es",
+            "_type": "span",
+            "marks": [],
+            "text": "Yayına aldıkları işler sadece 360 Photo Sphere (360 derece fotoğraflar) mı, yoksa birbirleri ile bağlantıları olan gerçek sanal turlar mı? (Listede yer alabilmek için fotoğraflar arasında bağlantı kurma becerisi maalesef aranmıyor ve bu konuda mağduriyetler yaşanabiliyor)"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "m7buk",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "njifq",
+            "_type": "span",
+            "marks": [],
+            "text": "Hazırladıkları sitede sizlere ne kadar bilgi aktarıyorlar? Yoksa size abartılı veya noksan bilgi verildiğini mi hissediyorsunuz?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "olz83",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "pdlny",
+            "_type": "span",
+            "marks": [],
+            "text": "Referansları hakikaten sizi etkileyebildi mi? çekim kalitesini rahatlıkla fark edebiliyor musunuz? Bunun için aynı anda en az 3 sitenin çalışmasını yan yana koymanızı tavsiye ederiz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "qi0gb",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "rvfpb",
+            "_type": "span",
+            "marks": [],
+            "text": "Sektörel tecrübeleri hakkında bilgi sahibi olabiliyor musunuz? Kaç yıldır sanal tur işi ile iştigal ediyorlar. Şu ana kadar ne kadar çekim hizmeti vermişler?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "sx8y0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "tjewx",
+            "_type": "span",
+            "marks": [],
+            "text": "İlave verebildikleri hizmet türleri neler?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "udetd",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "vkzpy",
+            "_type": "span",
+            "marks": [],
+            "text": "Yeni teknolojiyi hizmetlerine adapte edebiliyorlar mı? Yazılım bilgileri var mı?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "wxm4q",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "x7o7f",
+            "_type": "span",
+            "marks": [],
+            "text": "Fiyat/Kalite/Ekstralar konusunda sizi tatmin edebilecekler mi?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "yyzj2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "z67jl",
+            "_type": "span",
+            "marks": [],
+            "text": "Evet, Google Street View Güvenilir Profesyonel Fotoğrafçısı olma kriterleri teknik bir konudur. Onları bizler gerçekleştirdik ve listede yerimizi aldık. Bundan sonrası ise sizin seçim kriterlerinize bağlı bir konudur."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "101d9l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "112hgf",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "12n5k8",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-14",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "1mmwd",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-bb7b38c7f6e20942db3374142cedc0619b9be23b-600x800-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-06-12T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-street-view-guvenilir-profesyoneli-secerken-nelere-dikkat-etmelisiniz"
+    },
+    "summary": "Bu soruyu cevaplamadan önce şu sorunun cevabına bir yanıt aramak bize yol gösterebilir: Bir Google Street View Güvenilir Profesyonel Fotoğrafçısı nasıl olunur? Bu teknik konuyu, aynı kelimeleri Google da yazıp arttığınızda karşınıza çıkacak \"Güvenilir olmak için gerekenler\" linkine tıklayıp (Google.",
+    "title": "Google Street View Güvenilir – Profesyoneli (Fotoğrafçısı) seçerken nelere dikkat etmelisiniz?"
+  },
+  {
+    "_createdAt": "2026-07-14T16:56:41Z",
+    "_id": "APlZU7cpSt0Sg8o1rik7RY",
+    "_rev": "APlZU7cpSt0Sg8o1rik7Mz",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:56:41Z",
+    "body": [
+      {
+        "_key": "1v1v7g",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1w7g03",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Haritalar işletmenize doğru giden adresi sunmaktan da öte geçiyor, online ziyaretçiniz artık müşteriniz oluyor. Müşterilerinizi kendinize çekmek için Google'ın sunduğu ücretsiz hizmetten faydalanmaksa sizlerin elinde."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "1xj3r5",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-cf81e27a404efeb3f7cce3137826d303c51fb531-1017x567-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "1y9dqe",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "1zk69v",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Haritalarda bulunmak, işletmenizin görünürlüğünü artırırken aynı zamanda makul fiyatlarla hızlı ve kolay biçimde pazarlama yapmanızı ve hizmet sunmanızı sağlar. Google Benim İşletmem'e (Google My Business) kaydolmak için Google hesabınızla giriş yaptıktan sonra haritada işletmenizi bulun. İşletmeniz hakkında güncel verileri girdikten sonra doğrulama kodu istedikten sonra kaydınızı doğrulayın ve Google'da yerinizi alın."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "20tw2o",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "210wdl",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Güvenilir Profesyonellerinden, EKİP360' dan, alacağınız destek ile sokak görünümü ve işletmenizin 360 derece sanal turunu da künyenize ekleyerek; 7/24 müşterilerinizle etkileşim içinde olun. Google Haritalarda işletme girişini geliştirmek müşterilerinize ve size birçok avantajı bir arada sunar: kolay arama, iletişim kurma, ulaşma ve değerlendirme."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "227ocv",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "23x4mk",
+            "_type": "span",
+            "marks": [],
+            "text": "Google İşletme kimliğinize eklediğiniz her şey sizi farklı kılacaktır. Görsel anlamda zenginlik katarak benzersiz yönlerinizi öne çıkartıp, hatta yapılan yorumlara cevap yazabilirsiniz. Eğer sizde işletmenizin varlığına varlık katmak istiyorsanız her türlü sanal tur hizmetlerinde EKİP 360 olarak bir telefon kadar uzağınızdayız. İletişim.."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "24hkvj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "25waed",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "26iva2",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-11",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "1uewgh",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-8e75a608e3d5e894a0f0b162ba12d118c0fdcb30-225x225-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-05-22T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-haritalarda-isletme-girisinizi-gelistirin"
+    },
+    "summary": "Google Haritalar işletmenize doğru giden adresi sunmaktan da öte geçiyor, online ziyaretçiniz artık müşteriniz oluyor. Müşterilerinizi kendinize çekmek için Google'ın sunduğu ücretsiz hizmetten faydalanmaksa sizlerin elinde.",
+    "title": "Google Haritalarda İşletme Girişinizi Geliştirin !"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:01Z",
+    "_id": "APlZU7cpSt0Sg8o1rik9nc",
+    "_rev": "APlZU7cpSt0Sg8o1rik9j3",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:01Z",
+    "body": [
+      {
+        "_key": "2lkfyr",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2mk2qm",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Haritalar 360 derece sanal tur, aradığınız şeye ulaşmanın en kısa yolu. İster müşteri olun ister iş sahibi ya da gezgin, dünyayı sokak seviyesinden yakalayın."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2nw5tb",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-8e75a608e3d5e894a0f0b162ba12d118c0fdcb30-225x225-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2ohmux",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-330a5d3dd3f9790214dfa84d499b6a028b048af0-225x225-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2pofec",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-6171ed1d6b93016843e61e776cb076d290772425-225x225-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2qaobt",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-7fce48181ae7ddb31915c0f22560f6d5d2acaf17-171x295-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2rfkp1",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2s12p2",
+            "_type": "span",
+            "marks": [],
+            "text": "Dünyanın en kapsamlı, bağlantılı haritaları olan Google Haritalar, 360 derece sanal tur ile (panoramik görünümler) geliştirilir ve aynı zamanda dünyanın herhangi bir yerini kolaylıkla keşfetmenizi de sağlar. Eğer bir işletme sahibiyseniz; işletmenizin çalışma saatleri, adresi, telefonu ve resimleri gibi iletişim bilgilerini Google Haritalara yükleyerek müşterilerinizin firmanızı kolaylıkla bulmasını sağlayabilirsiniz. Bunlara ek olarak, işletmenizin 360 derece sanal turunu Google Haritalara yüklediğiniz takdirde müşterilerinize, firmanızın içini oturdukları yerden gezme fırsatını tanımış olursunuz. EKİP 360 olarak biz, Google'da yayına aldığımız 360 derece sanal tur hizmeti vermekle, potansiyel müşterilerinizin işletmenize ilk adımı atmalarına katkıda bulunmaktayız. Kısacası, internet kullanıcıları Google arama motorunda veya Google haritalarda sizi aradığında firma rozetinizle ve 360 derece görünümüz ile karşılanacak. Bu da Google arama motorunda daha kaliteli bir müşteri deneyimi sunmanızı sağlayacak."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2tpj0o",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-e50e12a38c35bda182e6b1788093390683074249-1200x800-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "2u0awk",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2vo9az",
+            "_type": "span",
+            "marks": [],
+            "text": "Google haritalar işletmeler için önemli bir işbirliği zemini oluştururken 360 derece Sanal Tur hizmeti ile de daha keyifli bir müşteri deneyimi yaşatma fırsatı da sunmaktadır. Gelin bizimle, Ekip 360 Google Street View Güvenilir profesyonelleri ile tanışın, internet dünyasında kendi özgün haritanızı oluşturalım ve işletmenize katma değer sağlayan tüm yollardan birlikte geçelim."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2wpxyn",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "2xx61o",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "2y12ip",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-11",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "2kq82a",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-3f900d904d5fedc4f0fa28eb040b12842e7f15f1-225x225-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-05-10T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-haritalar-360-derece-sanal-tur-ile-tanisin"
+    },
+    "summary": "Google Haritalar 360 derece sanal tur, aradığınız şeye ulaşmanın en kısa yolu. İster müşteri olun ister iş sahibi ya da gezgin, dünyayı sokak seviyesinden yakalayın.",
+    "title": "Google Haritalar 360 Derece Sanal Tur ile Tanışın !"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:30Z",
+    "_id": "APlZU7cpSt0Sg8o1rikFT5",
+    "_rev": "APlZU7cpSt0Sg8o1rikFOW",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:30Z",
+    "body": [
+      {
+        "_key": "48euhz",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "490byz",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Street View | Trusted – Güvenilir programı Google Business View (İş Görünümü) olarak başlamış ve Google Street View ın sokak görünümlerinden sanal turların işletmelerin içine kadar girebildiği bir hizmetidir. Google ın, kendini Street View (Sokak Görünümü) ile ispatladığı bu teknolojisi ile işletmelerinizi interaktif, panoramik sanal turlar (+ Sanal Gerçeklik) ile gezdirebilirsiniz. Hizmeti aldıktan sonra potansiyel müşterileriniz tarafından Google ve Google Maps (Haritalar) da iş yerinizi gezdirebilirsiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4adih4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4bmxtk",
+            "_type": "span",
+            "marks": [],
+            "text": "örnek sanal tur&hellip;"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4clsjo",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4dhor3",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Street View | Trusted – Güvenilir hizmeti almak için birçok nedeniniz olacaktır. Teknolojiyi çok iyi kullanan öncü işletmelerin çoğu bu hizmetten yararlanmaya hemen başladılar bile. Ancak, son teknoloji (cutting-edge) diye tabir edilen bu hizmeti satın almak, sadece belli kriterleri yerine getirebilen öncü ve büyük işletmelere mahsus değildir! Şayet Google Yerel İşletme (Google İşletmem) ve Google Haritalar kaydını yaptırmış iseniz, Google Street View (Sokak Görünümü) sizin sokağınızdan hatta bırakın sokağınızı şehrinizden dahi geçmiyor olsa ve iş yerinizin büyüklüğü 10 metre kare bile olsa bu hizmetten yararlanabilirsiniz. Veya iş yerinizin sokak üzerinde bir dükkan olması da gerekmez. Bir binanın 15. Katında bir ofis te bu hizmetten yararlanabilmektedir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4endeg",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4f9itk",
+            "_type": "span",
+            "marks": [],
+            "text": "Günümüzde insanlar bilmedikleri bir yerde özellikle Google Haritalar (Maps) dan istifade ederek arama yaptıkları düşünüldüğünde, bu hizmeti alan küçük yerel işletmelerin rakiplerine göre daha fazla ön plana çıkabilmeleri söz konusu olacaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4gwcau",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-3e8acb64f68f328ed45126fe54970aaa08b6fa34-900x539-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "4ha56y",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4izjyl",
+            "_type": "span",
+            "marks": [],
+            "text": "Hizmet hakkında daha detaylı bilgilere buradan ve buradan ulaşabilir. Yerel küçük işletmelere özel fiyat tarifelerimiz için ise bizimle hemen iletişime geçebilirsiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4jhrqy",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4kivi8",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4lyk9x",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-14",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "47pnj0",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-7e2816f021ac4f963632a2ea5c7febe633704717-235x327-png",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-02-03T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-street-view-trusted-guvenilir"
+    },
+    "summary": "Google Street View | Trusted – Güvenilir programı Google Business View (İş Görünümü) olarak başlamış ve Google Street View ın sokak görünümlerinden sanal turların işletmelerin içine kadar girebildiği bir hizmetidir. Google ın, kendini Street View (Sokak Görünümü) ile ispatladığı bu teknolojisi ile i",
+    "title": "Google Street View | Trusted – Güvenilir"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:38Z",
+    "_id": "APlZU7cpSt0Sg8o1rikHJC",
+    "_rev": "APlZU7cpSt0Sg8o1rikHEd",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:38Z",
+    "body": [
+      {
+        "_key": "4n9qdz",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4oe2jz",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Street View – İçini Görün, Google ın sadece Google işletmem kaydı yaptırmış ve doğrulamasını gerçekleştirmiş, böylece Google Haritalarda yerini almış işletmelerin satın alabileceği yüksek çözünürlüklü 360 fotoğraflarla çekimleri gerçekleştirilerek hazırlanan ve Google Güvenilir Profesyonelleri aracılığıyla verilen üst düzey hizmetidir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4ptol0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4q23gn",
+            "_type": "span",
+            "marks": [],
+            "text": "Fotoğrafçılar çekimleri gerçekleştirir ancak geri kalan her şey Google alt yapısı ve teknolojisi ile gerçekleştirilir. Kısacası, işletmenizin iç görünümü, Google Street View teknolojisi ile kullanıcılara ulaştırılır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4rb8aa",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4s88oo",
+            "_type": "span",
+            "marks": [],
+            "text": "örnek bir çekim için aşağıdaki turu gezebilirsiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4tbdnj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4ukyeu",
+            "_type": "span",
+            "marks": [],
+            "text": "Bilindiği üzere Google Street View, Google Maps (Google Haritalar) ın bir alt hizmet türüdür ve insanların sokaklarda sanal olarak gezmelerine olanak sağlamaktadır. Google yakın geçmişte bu teknolojiyi bir adım daha öteye taşımış ve aynı sanal turların Google Street View app ile cep telefonlarından Virtual Realitiy (Sanal Gerçeklik) teknolojisi ile gezilebilmesine de olanak tanımıştır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4v7zi3",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4wm6ee",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Street View – İçini Görün ise, sokak görünümüne ilave olarak işletmelerin iç mekan görünümlerini Google kullanıcılarının hizmetine açmıştır. Peki bir sanal tur hizmeti almanın işletmeye katacağı belli başlı değerler neler olabilir?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4xipx4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "4yrf04",
+            "_type": "span",
+            "marks": [],
+            "text": "Bu hizmet ile işletmeler, mekanlarının 7/24 sanal gezi yapılabilmesine olanak tanıyarak hem daha fazla tıklanma alabilme hem de aranan kelimelerde geçen coğrafi bilgilerle ilişkilendirilip bölgesel arama sonuçlarda görünebilme imkanına kavuşabilirler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "4zb8rf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "505rjp",
+            "_type": "span",
+            "marks": [],
+            "text": "7/24 Sanal Gezi imkanı :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "51r41y",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-986f95661dad4c4b1e2757ae219c76728ba4946e-424x500-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "52y5m0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "53376a",
+            "_type": "span",
+            "marks": [],
+            "text": "İş yeriniz kapalı olduğu saatlerde hiç kimse mekanınızı çok farklı ve üstün kılan özelliklerin neler olduğunu bilemeyecektir. İşte tam bu noktada Google Street View – See Inside – İçİNİ GöRüN potansiyel müşterilerinizin zamandan bağımsız olarak iş yerinizi gezebilmesine ve alacakları hizmet hakkında karar verebilmelerine yardımcı olacaktır. Böyle bir sanal showroom, hem de Google gibi en çok arama yapılan bir ortamda müşterilerinizi mekanınıza davet edecek, mekanınızı bütün ihtişamıyla ve dekorasyonu ile gözler önüne serecek ve bunu kapalı olduğunuz saatlerde de yapmaya devam edecektir. Böylece, insanların daha mekanınıza adım atmadan muhteşem bir müşteri deneyimi ile yeni ve güzel bir mekan keşfetme duygusu yaşamasına fırsat vereceksiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "54wc4b",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "55jnl4",
+            "_type": "span",
+            "marks": [],
+            "text": "Daha fazla tıklanma alma imkanı :"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "56jl9a",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-95ff0def7acd6562cfa118e0c0e3cb506ee86678-800x284-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "570d8l",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "58zjwl",
+            "_type": "span",
+            "marks": [],
+            "text": "İnsanlar, artık bir firma veya hizmet hakkında hizmet satın almak istediklerinde ilk baktıkları yer Google arama motoru veya Google haritalardır. Herhangi biri Google da firmanızı veya iş kolunuzu arattığında karşısına çıkacak işletme rozeti içinde yer alan ve işletmenizin sanal turunu sunan \"İçİNİ GöRüN\" normal bir sunumdan 2 kat daha fazla ilgi çekecektir. Bu sayede tıklanma sayısı kendiliğinden artacaktır. Kısacası işletmenizin çekim gücü artacak ve insanların olumlu düşünceleri ve sizinle irtibata geçme veya işletme sayfanıza görüş (Review) bırakma şansı artacaktır. İşletmenizin sanal turunda geçireceği süre fotoğraflardan daha fazla olacağı için sizinle bağlantıda kalma süresi artacak, müşteri de güven hissinin oluşmasına yardımcı olacak ve işyerinizin müşteri tarafından gerçekten ziyaret edilme şansını da arttıracaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "59kbj0",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5avx9d",
+            "_type": "span",
+            "marks": [],
+            "text": "Arama sonuçlarında coğrafi bilgilerinizle ilişkilendirilebilme imkanı:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5b0gpj",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-13ea481cb46cd0f99c8bc5b2d010ea27fc42cba5-740x426-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "5cbnp7",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5de9bn",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Street View – See Inside – İçİNİ GöRüN coğrafi etiketleme teknolojisi kullanır. Bunun anlamı, sanal tur çekimleriniz için yapılan çekimlerde fotoğrafların meta tag inde enlem ve boylam bilgilerinin yer alabiliyor olmasıdır. Şayet potansiyel bir müşteri arama yaptığı ürün veya firma için coğrafi bir alan belirtmişse, ve o bölgede sizin adresinize yakınsa, iş yeriniz arama sonuçlarında sanal turunuzla beraber görünebilecektir. Böylece, iş yerinizin bulunduğu bölgeye aşina olmayan birine mekanınızı tanıtabilme şansına sahip olduğunuz gibi, bulunduğunuz bölgede yaşayan potansiyel müşterilerinize onlara ne kadar yakın olduğunuzu ve neler sunabileceğinizi gösterebilme imkanına kavuşmuş olacaksınız."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5ejyxt",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5fhzc2",
+            "_type": "span",
+            "marks": [],
+            "text": "Coğrafi etiketlemenin çok kullanışlı olduğu ve muazzam fırsatları beraberinde getirdiği bir başka mecra sosyal medyadır. Bu sayede iş yerinizi ziyaret eden ve kendisini sizin mekanınızda olduğunu coğrafi olarak etiketleyen biri, sosyal medyada iş yerinizin sanal tur ile gezilebilmesine ve tanınmasına (hem de ücretsiz) katkıda bulunmuş olacaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5gsl8c",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5hhnck",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekip 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5id7s5",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-14",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "4m4aa5",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-986f95661dad4c4b1e2757ae219c76728ba4946e-424x500-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-01-27T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-street-view-icini-gorun"
+    },
+    "summary": "Google Street View – İçini Görün, Google ın sadece Google işletmem kaydı yaptırmış ve doğrulamasını gerçekleştirmiş, böylece Google Haritalarda yerini almış işletmelerin satın alabileceği yüksek çözünürlüklü 360 fotoğraflarla çekimleri gerçekleştirilerek hazırlanan ve Google Güvenilir Profesyoneller",
+    "title": "Google Street View – İÇİNİ GÖRÜN"
+  },
+  {
+    "_createdAt": "2026-07-14T16:57:46Z",
+    "_id": "APlZU7cpSt0Sg8o1rikJah",
+    "_rev": "APlZU7cpSt0Sg8o1rikJW8",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:57:46Z",
+    "body": [
+      {
+        "_key": "5ktx9a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5l913z",
+            "_type": "span",
+            "marks": [],
+            "text": "Ekim 2015'te ülkemizde yayına giren Google Street View (Sokak Panoramaları) işletmeler için pek çok fırsat sunuyor. çok farklı alanlarda hizmet veren pek çok farklı işletme tipi mevcut. İşletmelerin çalışma alanları, müşteri portföyleri farklı olsa da hedefleri ortaktır. Daha çok müşteri, daha çok satış. Buna ulaşmak için yapmaları gereken bazı ödevleri vardır. Bunların bir kısmı gerçek hayatta iken bir kısmı da internet aracığı ile sanal alemdedir. Biz kısaca sanal alemde yapabileceklerinize bakalım."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5mlgwf",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5ng5dr",
+            "_type": "span",
+            "marks": [],
+            "text": "EN öNEMLİ ANLARDA GöRüNüR OLUN Sanal dünyada yerinizi almak için bir web sitesi olmazsa olmazdır. Daha görünür olmak için sanal dünyada çok çeşitli platformlara kayıt olmak olmak gereklidir. Google İşletmeler, Sarı Sayfalar, alışveriş portalları, Facebook, Twitter, Google Plus, Instagram gibi sosyal medya hesapları bunlardan bazılarıdır. Müşterileriniz sizi merak edip internet ortamında kapınızı çaldığında onları tam anlamıyla sanal gerçeklik ile içeri davet edebilmeniz için artık en önemli yardımcınız Google Sanal Tur Hizmeti olacaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5ol3zj",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5p7ivc",
+            "_type": "span",
+            "marks": [],
+            "text": "GOOGLE ARAMA VE HARİTALARDA BULUNUR OLUN"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5qii2q",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5rvy8y",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Arama (Google Search) motoru vb. arama motorlarında kolayca bulunur olmak, arama sonuçlarında ilk sayfalarda çıkmak her işletmenin hayalidir. Bunun için SEO yani Search Engine Optimization (Arama Motoru Optimizasyonu) faaliyetleri olmazsa olmazdır. Bu kapsamda bilinçli tag (etiket) oluşturmak, blog sayfaları hazırlamak, backlink çalışması yapmak ve kaliteli özgün içerik barındırmak yapılması gerekenlerden sadece birkaçı. Google özgün içerik sever ve Sanal Tur gibi hizmetleri, de indexleyerek öne çıkarır. Kaliteli, insanları paylaşmaya teşvik edecek fotoğraflar da daha çok tıklanacak ve sitenizin bulunmasını kolaylaştıracaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5sm5zw",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5tm8hj",
+            "_type": "span",
+            "marks": [],
+            "text": "TEKNOLOJİ İLE öNE çIKIN Sanal dünyada öne çıkmak için reklam faaliyetleri en etkili yöntemlerden biridir. Web sitelerine reklam verebileceğiniz gibi daha kestirme yoldan arama sonuçlarında öne çıkmak için Google Adwords hizmetinden faydalanabilirsiniz. Ya da sosyal medya reklam kampanyalarınızda ekip360 Sanal Tur gibi teknolojik hizmetlerden istifade ederek öne çıkabilirsiniz. Rakipleriniz fotoğraflı reklamlar ile klasik reklamlar yayınlarken siz Sanal Tur teknolojisi ile daha çok dikkat çekmek, rakiplerinizden ayrışmak istemez misiniz?"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5up144",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-d0c731e7c96425386ae0ef2bd13c118beb4efd80-688x387-png",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "5vsqqq",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5wsecf",
+            "_type": "span",
+            "marks": [],
+            "text": "FARK YARATIN Burada web siteniz kadar kullandığınız içerik de önemlidir. İçerik yazılı veya görsel olacaktır. Ancak tüm araştırmalar gösteriyor ki görsel içerik insan hafızasında çok daha etkili ve unutulması zor bir etki yaratıyor. Buradan sonra kaliteli içerik devreye giriyor."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5xgxqr",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "5yhejw",
+            "_type": "span",
+            "marks": [],
+            "text": "Kaliteli görsel içerik için ekip360 gibi profesyonel içerik üretici bir firmadan hizmet almak sizi avantajlı duruma geçirecektir. Unutmayın sitenize gelen her ziyaretçi sizin için potansiyel müşteridir. Yine araştırmalara göre ziyaretçi ilk bir kaç saniye içerisinde sitede kalıp kalmayacağına karar veriyor. Bu nedenle sıradan veya kendi ürettiğiniz içerik yerine işi profesyonellere bırakmalısınız."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "5z9jnx",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-56346341ebda449a3d17b7115267e59a3be82703-700x415-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "60jagx",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "61r05h",
+            "_type": "span",
+            "marks": [],
+            "text": "Peki sizce ziyaretçiyi etkilemek için kaliteli fotoğraf yeterli mi? İşletmenizi Google Sanal Tur teknolojisi ile oradaymış gibi gezdirmeye ne dersiniz? Google İşletmeler için Sanal Tur Teknolojisi Google Street View ile entegre bir Google İşletmem çözümüdür. Aslında sanal tur teknolojisi emlak sektöründe emlakgezen.com gibi siteler aracılığı ile uzun yıllardır başarılı şekilde ülkemizde de kullanılıyor. Siz de bu eşsiz teknolojiyi hemen kullanmaya başlayabilirsiniz. Başlamak ve hizmetin size sağlayacağı faydaları öğrenmek için Google İşletme Görünümü (Business View) hizmeti satın almak için 10 iyi sebep başlıklı blog yazımızı okumanızı veya Google Sanal Tur Avantajları Nelerdir sayfamızı incelemenizi öneririz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "62l13a",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "639cuc",
+            "_type": "span",
+            "marks": [],
+            "text": "Google Sanal Tur Hizmeti tamamen Google alt yapısını kullanır. Alacağınız hizmet ile Sanal Tur unuz sadece Google'da değil, aynı zamanda kendi web sitenizde veya Facebook işletme sayfanızda da yayınlanabilir. Tek hizmet ile üç ayrı platformda müşterilerinizi etkileme şansına sahip olacaksınız. Unutulmamalı ki sizi merak eden, sitenize gelen ziyaretçi, aynı zamanda potansiyel müşteridir. Bu kişiyi etkilemenin en iyi yolu da tartışmasız Sanal Tur dur."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "64psb4",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "65a6t1",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "66nm5l",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-10",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "5jvyo6",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-0a782eb254e578f6273d5ee7b96ff59b0858f3cd-200x127-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2017-01-19T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-sanal-tur-hizmeti-ile-isletmenizi-one-gecirin"
+    },
+    "summary": "Ekim 2015'te ülkemizde yayına giren Google Street View (Sokak Panoramaları) işletmeler için pek çok fırsat sunuyor. çok farklı alanlarda hizmet veren pek çok farklı işletme tipi mevcut. İşletmelerin çalışma alanları, müşteri portföyleri farklı olsa da hedefleri ortaktır. Daha çok müşteri, daha çok s",
+    "title": "Google Sanal Tur Hizmeti ile İşletmenizi Öne Geçirin"
+  },
+  {
+    "_createdAt": "2026-07-14T16:58:00Z",
+    "_id": "APlZU7cpSt0Sg8o1rikMky",
+    "_rev": "APlZU7cpSt0Sg8o1rikMgP",
+    "_type": "blogPost",
+    "_updatedAt": "2026-07-14T16:58:00Z",
+    "body": [
+      {
+        "_key": "6r9xpk",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6sdu0v",
+            "_type": "span",
+            "marks": [],
+            "text": "Google 2010 yılında Street View özelliğinin yanında, işletmelerin \"Google Güvenilir Profesyonelleri (Fotoğrafçıları)\" nı kiralayarak ofislerini, mağazalarını, v.b. mekanlarının çekimlerinin yapılmasına ve mekanlarının 360 derece Google Aramalar ve Google Haritalar da görünebilmelerine olanak tanıdı. Bu hizmeti ilk başlarda \"Business View\" olarak duyurdu. Şimdilerde ise Türkiye'de de giderek yaygınlaşan bu hizmet Google aramalarda \"Dışını Görün\" ve Google haritalarda \"360 derece Görünüm\" sekmesi altında bulunabilmektedir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6tuw1i",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-42160fac1ee24661595c56efeae3cf23b3cccab0-1600x1017-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "6uke9e",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6v7ptt",
+            "_type": "span",
+            "marks": [],
+            "text": "İşletmeler Google My Business (Google işletmem) sayfalarına fotoğraflar ekleyebildikleri gibi, Google Güvenilir Fotoğrafçıları 'ndan almış oldukları 360 derece Sanal Tur hizmetini de (profesyonller aracılığıyla) ekleyebilmektedirler."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6w7fi2",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6x57c7",
+            "_type": "span",
+            "marks": [],
+            "text": "Peki, sadece 1 defaya mahsus olarak Google Güvenilir Fotoğrafçısı 'na ödeyeceğiniz birkaç yüz lira ile işletmenizi Google My Business 360 Panorama hizmeti ile neden tanıtmalısınız? İşte size 10 güzel neden:"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "6yj340",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "6z15kv",
+            "_type": "span",
+            "marks": [],
+            "text": "1. Potansiyel müşterileriniz (cafe&restaurant, showroom, spor salonu), misafirleriniz (otel), hastalarınız (hastane), öğrencileriniz (okul, kolej, üniversite, yurt), işletmenizin nasıl bir yer olduğunu bilmek isterler. Google aramalarda işletmenizi 360 derece gezdirebilmeniz o anda bir satış gerçekleştirmeniz demek olabilir. Nasıl bir etkiden mi bahsediyoruz. Hemen aşağıda ki resmi mouse unuz ile tıklayarak gezmeye başlayın !"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "70z875",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "71wj01",
+            "_type": "span",
+            "marks": [],
+            "text": "2. Google My Business (Google işletmem) alanınız ne kadar zengin olursa, aramalarda potansiyel müşterilerinizin sizin hakkınızda bilgi sahibi olmasını o kadar çok çekici kılacak ve daha fazla insanın mekandan içeri girmesini sağlayabileceksiniz."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "72gs4k",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "737rk8",
+            "_type": "span",
+            "marks": [],
+            "text": "3. Google aramalarda sıralamanızı etkileyecek bir faktör olabilir. Bu hizmeti almanız aramalarda direkt olarak üst sıralara çıkacağınız anlamına gelmemekle beraber, yapılacak Google işletme 360 panorama gezileri sayesinde (ki her gezi Google tarafından sayılmaktadır) daha çok insanın mekanınızı gezmesine yol açacak ve Google ın SEO anlamında sıralamada önem verdiği bir faktör olan \"bahsi geçilen site\" olmanıza katkıda bulunarak sıralamanıza olumlu yönde etkisi olacaktır."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "748lpt",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "75o0c4",
+            "_type": "span",
+            "marks": [],
+            "text": "4. Google My Business 360 Panoramaları hem web sitenizde hem de Facebook Fun sayfanızda basit bir embed kod yardımı ile kullanabilirsiniz ! (Muhteşem değil mi?) Sosyal medya kampanyalarında yaratacağınız inanılmaz etki sayesinde müşterilerinizin size karşı güvenini arttırabilme, onlarla birebir görüşme yapabilme ve uzun dönem müşteri ilişkisi başlatabilme imkanına kavuşabilirsiniz. Böyle bir örneğe şimdiye kadar rastlamadıysanız hiç durmayın. İlk siz olun!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "76bcux",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "77h8yh",
+            "_type": "span",
+            "marks": [],
+            "text": "5. Google Güvenilir Fotoğrafçıları sadece 360 panorama çekmekle işlerini bitirmezler. Gelmişken işletmenizin geniş açılı lensler ile HDR fotoğraflarını da çekerler ! (Hizmete neler dahildir?) Siz de bu fotoğrafları istediğiniz her mecrada kullanabilirsiniz. (Bu da harika, öyle değil mi?) Yalnız sözleşmenizde çekilen fotoğrafların entelektüel mülkiyet haklarının size devredildiğinden emin olunuz! Ekip 360 bu hakları müşterilerine devretmektedir."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "78ee58",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-678c32643605eb643c4ec1b7d446b504e222bd58-525x945-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "79evvh",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7ae4gz",
+            "_type": "span",
+            "marks": [],
+            "text": "6. Mobil cihazlarda Google ve Google maps aramalarında özellikle bölgesel bazlı aramalarda (Local SEO) iş yerinizin görünürlülüğüne katkısı olur. Ayrıca 360 derece görünüm mobil cihazınızın tam ortasında ve ekranı kaplayacak şekilde kullanıcıyı içeri davet eder."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7bve5g",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7ctqp1",
+            "_type": "span",
+            "marks": [],
+            "text": "7. Farklılaşma! Bu hizmeti kendi bölgelerinde alan ilk işletmeler her zaman en fazla katma değeri yaşama şansına sahip olurlar."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7df46x",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-df2bad53eed910d1379a43d9eae6429c538892a2-1600x790-jpg",
+          "_type": "reference"
+        }
+      },
+      {
+        "_key": "7e9asy",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7fn24b",
+            "_type": "span",
+            "marks": [],
+            "text": "8. Gelecekten erken haberdar olabilme ! Hizmeti çok öncü bulabilir ve olgunlaşmasını beklemek isteyebilirsiniz. Ancak unutmayın, yenilikleri gerçek anlamda takip edebilmek için teknolojiye ekli olmanız gerekir !"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7gcg0t",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7hzpdj",
+            "_type": "span",
+            "marks": [],
+            "text": "9. Virtual Reality ! Google bu teknoloji ile işletmenizi Sanal Gerçeklik ile de buluşturuyor. Bunun için yapmanız gereken sadece mobil cihazınıza Google Street View app ını yüklemek. (Android , IOS) Sonrası? İşletmenizi fuarlarda Sanal Gerçeklik gözlükleri ile tanıtmaya hemen başlayabilirsiniz!"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7iuioh",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7jp8u5",
+            "_type": "span",
+            "marks": [],
+            "text": "10. Google My Business 360 Panorama hizmetini Ekip 360 dan almanız halinde elde edeceğiniz bir bonus daha var ! Sanal turdan türetilmiş ve Youtube sayfanızda ve diğer tanıtım mecralarında kullanabileceğiniz MP4 video hizmeti. örnekler için tıklayınız."
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7k1zrm",
+        "_type": "block",
+        "children": [
+          {
+            "_key": "7lwxbt",
+            "_type": "span",
+            "marks": [],
+            "text": "EKİP 360"
+          }
+        ],
+        "markDefs": [],
+        "style": "normal"
+      },
+      {
+        "_key": "7m06tx",
+        "_type": "image",
+        "asset": {
+          "_ref": "image-4a7da6aac0f6858ac4f5d4bbd383bbf3b33afca4-400x100-jpg",
+          "_type": "reference"
+        }
+      }
+    ],
+    "category": {
+      "_ref": "blogCat-10",
+      "_type": "reference"
+    },
+    "mainImage": {
+      "_key": "6qdcao",
+      "_type": "image",
+      "asset": {
+        "_ref": "image-45415b66324d82e17dad872e9e5b631bfbbaab1c-426x200-jpg",
+        "_type": "reference"
+      }
+    },
+    "publishedAt": "2016-12-28T00:00:00.000Z",
+    "slug": {
+      "_type": "slug",
+      "current": "google-isletme-gorunumu-business-view-hizmeti-satin-almak-icin-10-iyi-sebep"
+    },
+    "summary": "Google 2010 yılında Street View özelliğinin yanında, işletmelerin \"Google Güvenilir Profesyonelleri (Fotoğrafçıları)\" nı kiralayarak ofislerini, mağazalarını, v.b. mekanlarının çekimlerinin yapılmasına ve mekanlarının 360 derece Google Aramalar ve Google Haritalar da görünebilmelerine olanak tanıdı.",
+    "title": "Google İşletme Görünümü (Business View) hizmeti satın almak için 10 iyi sebep"
+  }
+]
